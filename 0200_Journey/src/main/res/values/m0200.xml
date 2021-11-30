@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0200">行程</string>
+
+    <string name="m0201">行程規劃</string>
+    <string name="m0201_01">行程推薦</string>
+    <string name="m0201_02">行程搜尋</string>
+    <string name="m0201_03">行程定位</string>
+
+    <string name="m0201_03_t001">行程規劃</string>
+    <string name="m0201_03_b001">新增</string>
+    <string name="m0201_03_t002">時間地點1</string>
+    <string name="m0201_03_t003">時間地點2</string>
+    <string name="m0201_03_t007">景點1名稱</string>
+    <string name="m0201_03_t005">景點2名稱</string>
+    <string name="m0201_03_t009">交通工具選擇</string>
+    <string name="m0201_03_b002">交通工具選擇</string>
+    <string-array name="m0201_03_a001">
+        <item>搜尋</item>
+        <item>收藏</item>
+    </string-array>
+
+    <string name="m0202">尋找靈感</string>
+    <string name="m0202_01">我的行程</string>
+    <string name="m0202_02">我的收藏</string>
+    <string name="m0202_03">編輯頁面</string>
+
+    <string name="m0203">團友管理</string>
+    <string name="m0203_01">照片分享</string>
+
+    <string name="m0203_01_b001">分享此照片給所有團友</string>
+
+    <string name="m0203_02">資訊發布</string>
+
+    <string-array name="m0203_02_sp001">
+        <item>集合啦</item>
+        <item>休息啦</item>
+        <item>逛街拉</item>
+    </string-array>
+    <string name="m0203_02_b001">發布資訊給所有團友</string>
+
+    <string name="m0203_03">團友管理</string>
+
+    <string name="m0203_04">團友位置</string>
+
+    <string name="m0203_03_lv001">團友清單</string>
+</resources>

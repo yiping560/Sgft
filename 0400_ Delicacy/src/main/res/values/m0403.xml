@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0403_t001">地區:</string>
+    <string name="hint0403_t001">請輸入地區</string>
+    <string name="m0403_b001">照片一</string>
+    <string name="m0403_b002">照片二</string>
+    <string name="m0403_b003">照片三</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tw.sgft.m0200">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".M0200"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".M0201"/>
+        <activity android:name=".M020101"/>
+        <activity android:name=".M020102"/>
+        <activity android:name=".M020103"/>
+
+        <activity android:name=".M0202"/>
+        <activity android:name=".M020201"/>
+        <activity android:name=".M020202"/>
+        <activity android:name=".M020203"/>
+
+        <activity android:name=".M0203"/>
+        <activity android:name=".M020301"/>
+        <activity android:name=".M020302"/>
+        <activity android:name=".M020303"/>
+        <activity android:name=".M020304"/>
+
+
+    </application>
+
+</manifest>

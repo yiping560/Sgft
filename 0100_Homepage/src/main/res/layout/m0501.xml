@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/btn_default"
+    android:orientation="vertical"
+    android:padding="@dimen/p10"
+    tools:context=".M0501">
+
+    <Button
+        android:id="@+id/m0501_b001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/m0501_b001"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0501_t001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:gravity="left"
+        android:minWidth="88dp"
+        android:minHeight="44dp"
+        android:paddingTop="@dimen/p10"
+        android:text="@string/m0501_t001"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0501_t002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:gravity="left"
+        android:minWidth="88dp"
+        android:minHeight="44dp"
+        android:paddingTop="@dimen/p10"
+        android:text="@string/m0501_t002"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0501_t003"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p85"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:gravity="left"
+        android:minWidth="88dp"
+        android:minHeight="44dp"
+        android:paddingTop="@dimen/p10"
+        android:text="@string/m0501_t003"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0501_t004"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p150"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:gravity="left"
+        android:minWidth="88dp"
+        android:minHeight="44dp"
+        android:paddingTop="@dimen/p10"
+        android:text="@string/m0501_t004"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/m0501_mb001"
+        android:layout_width="@dimen/p180"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginStart="@dimen/p100"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/m0501_mb001"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m0501_t005"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:gravity="left"
+        android:minWidth="88dp"
+        android:minHeight="44dp"
+        android:paddingTop="@dimen/p10"
+        android:text="@string/m0501_t005"
+        android:textColor="@color/Teal"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+</LinearLayout>

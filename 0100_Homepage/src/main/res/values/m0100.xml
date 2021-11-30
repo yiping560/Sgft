@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0100_b001">行程</string>
+    <string name="m0100_b002">景點</string>
+    <string name="m0100_b003">美食</string>
+    <string name="m0100_b004">住宿</string>
+    <string name="m0100_v001">行程</string>
+    <string name="m0100_v002">景點</string>
+    <string name="m0100_v003">美食</string>
+    <string name="m0100_v004">住宿</string>
+</resources>
