@@ -8,11 +8,10 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Sgft"
 include ':0100_Homepage'
-include ':0400_ Delicacy'
 include ':0500_ Stay'
 include ':0200_Journey'
 include ':0300_ Attractions'
-
+include ':0400_ Delicacy'
 
 
 

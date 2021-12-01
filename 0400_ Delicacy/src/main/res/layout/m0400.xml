@@ -9,44 +9,55 @@
     android:padding="@dimen/p10"
     tools:context=".M0400">
 
-    <TableRow
+    <Button
+        android:id="@+id/m0400_b001"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p20"
+        android:text="@string/m0400_b001"
+        android:textSize="@dimen/fontsize" />
 
-        <Button
-            android:id="@+id/m0400_b001"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/p50"
-            android:text="@string/m0400_b001"
-            android:textSize="@dimen/fontsize" />
-
-    </TableRow>
-
-    <TableRow
+    <TextView
+        android:id="@+id/m0400_t001"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="100dp"
+        android:background="@color/Yellow"
+        android:gravity="center"
+        android:text="@string/m0400_t001"
+        android:textSize="@dimen/fontsize" />
 
-        <Button
-            android:id="@+id/m0400_b002"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/p50"
-            android:text="@string/m0400_b002"
-            android:textSize="@dimen/fontsize" />
-    </TableRow>
-
-    <TableRow
+    <Button
+        android:id="@+id/m0400_b002"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p20"
+        android:text="@string/m0400_b002"
+        android:textSize="@dimen/fontsize" />
 
-        <Button
-            android:id="@+id/m0400_b003"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/p50"
-            android:text="@string/m0400_b003"
-            android:textSize="@dimen/fontsize" />
-    </TableRow>
+    <TextView
+        android:id="@+id/m0400_t002"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/Yellow"
+        android:gravity="center"
+        android:text="@string/m0400_t001"
+        android:textSize="@dimen/fontsize" />
+
+    <Button
+        android:id="@+id/m0400_b003"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p20"
+        android:text="@string/m0400_b003"
+        android:textSize="@dimen/fontsize" />
+
+    <TextView
+        android:id="@+id/m0400_t003"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/Yellow"
+        android:gravity="center"
+        android:text="@string/m0400_t001"
+        android:textSize="@dimen/fontsize" />
 
 </LinearLayout>

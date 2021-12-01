@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="m0402_b001">照片一</string>
-    <string name="m0402_b002">照片二</string>
-    <string name="m0402_b003">照片三</string>
     <string name="m0402_t001">餐廳種類:</string>
+    <string name="m0402_t002">照片</string>
+    <string name="m0402_t003">店名/評分/距離/電話預約</string>
+
+
+    <string-array name="m0402_a001">
+        <item>中式料理</item>
+        <item>西式料理</item>
+        <item>泰式料理</item>
+        <item>美式料理</item>
+    </string-array>
 </resources>

@@ -20,9 +20,6 @@ public class M0400 extends AppCompatActivity {
     }
 
     private void setupViewComponent() {
-        Intent intent = this.getIntent();
-        String mode_title = intent.getStringExtra("class_title");
-        this.setTitle(mode_title);
         b001 = (Button) findViewById(R.id.m0400_b001);
         b002 = (Button) findViewById(R.id.m0400_b002);
         b003 = (Button) findViewById(R.id.m0400_b003);
@@ -38,15 +35,15 @@ public class M0400 extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.m0400_b001:
                     intent.putExtra("class_title",getString(R.string.m0400_b001));
-                    intent.setClass(M0400.this,M0401.class);
+                    intent.setClass(M0400.this, M0401.class);
                     break;
                 case R.id.m0400_b002:
                     intent.putExtra("class_title",getString(R.string.m0400_b002));
-                    intent.setClass(M0400.this,M0402.class);
+                    intent.setClass(M0400.this, M0402.class);
                     break;
                 case R.id.m0400_b003:
                     intent.putExtra("class_title",getString(R.string.m0400_b003));
-                    intent.setClass(M0400.this,M0403.class);
+                    intent.setClass(M0400.this, M0403.class);
                     break;
             }
             startActivity(intent);
