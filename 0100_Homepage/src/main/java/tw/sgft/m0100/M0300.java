@@ -20,10 +20,7 @@ public class M0300 extends AppCompatActivity {
     }
 
     private void setupViewComponent() {
-        Intent intent = this.getIntent();
-        String mode_title = intent.getStringExtra("class_title");
-        this.setTitle(mode_title);
-        //Intent intent=this.getIntent();
+        Intent intent=this.getIntent();
         btn001= (Button)findViewById(R.id.m0300_b001);
         btn002= (Button)findViewById(R.id.m0300_b002);
 
@@ -44,7 +41,7 @@ public class M0300 extends AppCompatActivity {
                     break;
                 case R.id.m0300_b002:
                     intent.putExtra("class_title",getString(R.string.m0000_b0302));
-                    intent.setClass(M0300.this, M0302.class);
+                    intent.setClass(M0300.this,M0302.class);
             }
             startActivity(intent);
         }
