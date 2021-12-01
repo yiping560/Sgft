@@ -22,4 +22,9 @@
     <dimen name="p350">350dp</dimen>
     <dimen name="p100">100dp</dimen>
     <dimen name="p60">60dp</dimen>
+    <dimen name="Margins">10dp</dimen>
+    <dimen name="p270">270dp</dimen>
+    <dimen name="p40">40dp</dimen>
+    <dimen name="font18">18sp</dimen>
+    <dimen name="p185">185dp</dimen>
 </resources>

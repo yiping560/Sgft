@@ -52,4 +52,10 @@
         android:textColor="@color/Red"
         android:textSize="@dimen/fontsize"
         tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </LinearLayout>

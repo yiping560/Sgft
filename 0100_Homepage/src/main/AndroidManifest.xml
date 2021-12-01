@@ -37,6 +37,7 @@
         <activity android:name=".M020201"></activity>
         <activity android:name=".M020202"></activity>
         <activity android:name=".M020203"></activity>
+        <activity android:name=".M020204"></activity>
         <activity android:name=".M020301"></activity>
         <activity android:name=".M020302"></activity>
         <activity android:name=".M020303"></activity>

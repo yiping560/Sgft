@@ -38,7 +38,7 @@ public class M0100 extends AppCompatActivity {
             switch (v.getId()){
                 case R.id.m0100_b001:
                     intent.putExtra("class_title",getString(R.string.m0100_v001));
-                    intent.setClass(M0100.this,M0200.class);
+                    intent.setClass(M0100.this,M0202.class);
                     break;
                 case R.id.m0100_b002:
                     intent.putExtra("class_title",getString(R.string.m0100_v002));

@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/Gray"
+    android:orientation="vertical"
+    android:padding="@dimen/p10"
+    tools:context=".M0202">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/m0202_b001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Spacing"
+        android:gravity="start"
+        android:text="@string/m0202_b001"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/m0202_b002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Spacing"
+        android:gravity="start"
+        android:text="@string/m0202_b002"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/m0202_b003"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Spacing"
+        android:gravity="start"
+        android:text="@string/m0202_b003"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/m0202_b004"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Spacing"
+        android:gravity="start"
+        android:text="@string/m0202_b004"
+        android:textAllCaps="false"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>
