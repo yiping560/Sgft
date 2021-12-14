@@ -18,30 +18,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".M0300"></activity>
-        <activity android:name=".M0302"></activity>
-        <activity android:name=".M0304"></activity>
-        <activity android:name=".M0400"></activity>
-        <activity android:name=".M0401"></activity>
-        <activity android:name=".M0402"></activity>
-        <activity android:name=".M0403"></activity>
+
+        <activity android:name=".M0700"></activity>
+        <activity android:name=".M0701"></activity>
+        <activity android:name=".M0702"></activity>
         <activity android:name=".M0500"></activity>
         <activity android:name=".M0501"></activity>
+        <activity android:name=".M0502"></activity>
+        <activity android:name=".M050301"></activity>
+        <activity android:name=".M0504"></activity>
+        <activity android:name=".M0600"></activity>
+        <activity android:name=".M0601"></activity>
+        <activity android:name=".M0602"></activity>
         <activity android:name=".M0200"></activity>
-        <activity android:name=".M0201"></activity>
-        <activity android:name=".M0202"></activity>
-        <activity android:name=".M0203"></activity>
-        <activity android:name=".M020101"></activity>
-        <activity android:name=".M020102"></activity>
-        <activity android:name=".M020103"></activity>
-        <activity android:name=".M020201"></activity>
-        <activity android:name=".M020202"></activity>
-        <activity android:name=".M020203"></activity>
-        <activity android:name=".M020204"></activity>
-        <activity android:name=".M020301"></activity>
-        <activity android:name=".M020302"></activity>
-        <activity android:name=".M020303"></activity>
-        <activity android:name=".M020304"></activity>
+        <activity android:name=".M0400"></activity>
+        <activity android:name=".M0300"></activity>
+        <activity android:name=".M030010"></activity>
+        <activity android:name=".M030011"></activity>
+        <activity android:name=".M030012"></activity>
+        <activity android:name=".M030020"></activity>
+        <activity android:name=".M030030"></activity>
+        <activity android:name=".M030040"></activity>
+
     </application>
 
 </manifest>

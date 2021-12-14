@@ -8,14 +8,11 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Sgft"
 include ':0100_Homepage'
-include ':0500_ Stay'
-include ':0300_ Attractions'
-include ':0400_ Delicacy'
-include ':0202_Journeyplan'
+include ':0700_ Stay'
+include ':0500_ Attractions'
+include ':0600_Delicacy'
+include ':0200_TeamManager'
+include ':0400_Membermanage'
+include ':0300_Journeymanage'
 
-
-
-
-
-
-
+include ':mysqltest'

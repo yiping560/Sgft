@@ -11,10 +11,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/0100_Homepage" />
-            <option value="$PROJECT_DIR$/0202_Journeyplan" />
-            <option value="$PROJECT_DIR$/0300_ Attractions" />
-            <option value="$PROJECT_DIR$/0400_ Delicacy" />
-            <option value="$PROJECT_DIR$/0500_ Stay" />
+            <option value="$PROJECT_DIR$/0200_TeamManager" />
+            <option value="$PROJECT_DIR$/0300_Journeymanage" />
+            <option value="$PROJECT_DIR$/0400_Membermanage" />
+            <option value="$PROJECT_DIR$/0500_ Attractions" />
+            <option value="$PROJECT_DIR$/0600_Delicacy" />
+            <option value="$PROJECT_DIR$/0700_ Stay" />
+            <option value="$PROJECT_DIR$/mysqltest" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
