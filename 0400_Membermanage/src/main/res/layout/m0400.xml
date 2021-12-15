@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m0400_b003"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/end"
+    tools:context=".M0400">
+
+    <ImageView
+        android:id="@+id/m0400_b004"
+        android:layout_width="161dp"
+        android:layout_height="221dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="245dp"
+        app:srcCompat="@drawable/unnamed" />
+
+    <TextView
+        android:id="@+id/m0400_ans"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0400_b002"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="-202dp"
+        android:text="@string/m0400_ans"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/m0400_b001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="204dp"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/m0400_b001"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/m0400_b002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/m0400_b001"
+        android:layout_alignStart="@+id/m0400_b001"
+        android:layout_marginTop="@dimen/Margins"
+        android:rotation="-360"
+        android:text="@string/m0400_b002"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+</RelativeLayout>

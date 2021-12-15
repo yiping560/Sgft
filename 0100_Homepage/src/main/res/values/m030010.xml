@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="m030010__title">行程編輯</string>
+    <string name="m030010_start">出發日期</string>
+    <string name="m030010_end">結束日期</string>
+    <string name="m030010_planname">行程名稱</string>
+    <string name="m030010_b001">新增行程</string>
+    <string name="m030010_b002">儲存</string>
+    <string name="m030010_b003">返回</string>
+
+
+</resources>

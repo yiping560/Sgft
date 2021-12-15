@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    android:orientation="vertical"
+    android:padding="@dimen/p10"
+    tools:context=".M0600">
+
+    <Button
+        android:id="@+id/m0600_b001"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/m0600_b001"
+        android:textSize="@dimen/fontsize" />
+
+    <ImageView
+        android:id="@+id/m0600_i001"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/map" />
+
+    <Button
+        android:id="@+id/m0600_b002"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/p10"
+        android:text="@string/m0600_b002"
+        android:textSize="@dimen/fontsize" />
+
+    <ImageView
+        android:id="@+id/m0600_i002"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/a01" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p20"
+        android:gravity="end"
+        android:text="@string/m0600_myname"
+        android:textSize="@dimen/fontsize" />
+
+</LinearLayout>

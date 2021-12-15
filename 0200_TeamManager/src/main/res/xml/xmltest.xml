@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item_list>
+        <itemID id ="0">
+            <name>Dummy</name>
+        </itemID>
+        <itemID id ="1">
+            <name>香蕉</name>
+        </itemID>
+        <itemID id ="2">
+            <name>阿明</name>
+        </itemID>
+        <itemID id = "3">
+            <name>小華</name>
+        </itemID>
+        <itemID id = "4">
+            <name>雄哥</name>
+        </itemID>
+        <itemID id = "5">
+            <name>樓上孫太太</name>
+        </itemID>
+        <itemID id = "6">
+            <name>樓下王伯伯</name>
+        </itemID>
+        <itemID id = "7">
+            <name>小黑</name>
+        </itemID>
+        <itemID id = "8">
+            <name>小黃</name>
+        </itemID>
+        <itemID id = "9">
+            <name>狗狗</name>
+        </itemID>
+    </item_list>
+</resources>

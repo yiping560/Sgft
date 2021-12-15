@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="m0200_dummy_userID">
+        <item>AA</item>
+        <item>BB</item>
+        <item>CC</item>
+    </string-array>
+
+    <string-array name="m0200_dummy_userName">
+        <item>阿明</item>
+        <item>小華</item>
+        <item>香蕉</item>
+        <item>阿松</item>
+        <item>AA</item>
+        <item>BB</item>
+        <item>CC</item>
+    </string-array>
+    
+    <string-array name="m0200_dummy_date">
+        <item>日月潭單日來回</item>
+        <item>宜蘭童玩節兩天一夜</item>
+        <item>單車環島10日遊</item>
+    </string-array>
+</resources>
+

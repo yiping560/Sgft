@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0400_b001">註冊</string>
+    <string name="m0400_b002">登入</string>
+    <string name="m0400_t001">登入成功</string>
+    <string name="aleart_b001">取消</string>
+    <string name="aleart1_b001">取消</string>
+    <string name="m0400_ans">你輸入:</string>
+    <string name="m0400_e001">帳號</string>
+    <string name="m0400_e002">密碼</string>
+    <string name="m0400_b004">編輯</string>
+    <string name="m0400_item">結束</string>
+    <string name="m0401_item">新增好友</string>
+    <string name="action_settings">結束</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<!--    <string name="m030040_t000">我的行程</string>-->
+    <string name="m030040_t001">我的行程 1</string>
+    <string name="m030040_add">+</string>
+    <string name="m030040_delete">-</string>
+    <string name="m030040_frd">團友</string>
+    <string name="m030040_share">分享</string>
+    <string name="m030040_t002">我的行程 2</string>
+    <string name="m030040_t003">我的行程 3</string>
+</resources>

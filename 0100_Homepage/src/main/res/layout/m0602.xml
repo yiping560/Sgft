@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    android:orientation="vertical"
+    android:padding="@dimen/p10"
+    tools:context=".M0602">
+
+    <Spinner
+        android:id="@+id/m0602_s001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/m0602_a001"
+        android:popupBackground="@color/Teal"
+        android:prompt="@string/m0602_t001"
+        android:spinnerMode="dialog"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/m0602_i001"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/a05" />
+
+        <TextView
+            android:id="@+id/m0602_t001"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/m0602_t001"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/m0602_i002"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/a06" />
+
+        <TextView
+            android:id="@+id/m0602_t002"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/m0602_t002"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/m0602_i003"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/a07" />
+
+        <TextView
+            android:id="@+id/m0602_t003"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/m0602_t003"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/m0602_i004"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/a08" />
+
+        <TextView
+            android:id="@+id/m0602_t004"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/m0602_t004"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <ImageView
+            android:id="@+id/m0602_i005"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/a09" />
+
+        <TextView
+            android:id="@+id/m0602_t005"
+            android:layout_height="100dp"
+            android:gravity="center|center_vertical"
+            android:text="@string/m0602_t005"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/m0602_myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p20"
+        android:gravity="end"
+        android:text="@string/m0600_myname"
+        android:textSize="@dimen/fontsize" />
+
+</LinearLayout>

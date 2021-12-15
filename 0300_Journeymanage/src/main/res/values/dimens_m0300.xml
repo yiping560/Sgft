@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="m020204_pins">250</string>-->
+    <string name="font18">18sp</string>
+    <dimen name="p70">70dp</dimen>
+    <dimen name="p_m10">-10dp</dimen>
+    <dimen name="p300">300dp</dimen>
+    <dimen name="font21">21sp</dimen>
+    <dimen name="p125">125dp</dimen>
+</resources>

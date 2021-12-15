@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0403_chb01">好友一</string>
+    <string name="m0403_chb02">好友二</string>
+    <string name="m0403_chb03">好友三</string>
+    <string name="m0403_t002">好友列表</string>
+    <string name="m0403_b002">確認</string>
+    <string name="m0403_t001">請輸入gmail</string>
+    <string name="m0403_b001">送出</string>
+</resources>
