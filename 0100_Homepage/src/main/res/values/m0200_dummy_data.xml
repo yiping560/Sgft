@@ -15,6 +15,13 @@
         <item>AA</item>
         <item>BB</item>
         <item>CC</item>
+        <item>DD</item>
+        <item>EE</item>
+        <item>FF</item>
+        <item>東東</item>
+        <item>南南</item>
+        <item>西西</item>
+        <item>北北</item>
     </string-array>
     
     <string-array name="m0200_dummy_date">

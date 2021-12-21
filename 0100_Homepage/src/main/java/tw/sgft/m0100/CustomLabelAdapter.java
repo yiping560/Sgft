@@ -1,68 +1,77 @@
 package tw.sgft.m0100;
 
-import android.content.Context;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class CustomLabelAdapter extends BaseAdapter {
+public class CustomLabelAdapter extends RecyclerView.Adapter<CustomLabelAdapter.ViewHolder> {
 
           private int resID;
           private List<String> data;
-          private Context context;
 
-          public CustomLabelAdapter(Context context, List<String> data,int resID) {
-                    this.context = context;
+          //檢查是否被選取用
+          private boolean[] isChecked;
+
+          public CustomLabelAdapter(List<String> data, int resID) {
                     this.data = data;
-                    this.resID=resID;
+                    this.resID = resID;
+                    isChecked = new boolean[data.size()];
           }
 
-          class ViewHolder {
-                    CheckBox cb;
-                    TextView title;
+          @NonNull
+          @Override
+          public CustomLabelAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                    View view = LayoutInflater.from(parent.getContext())
+                              .inflate(resID, parent, false);
+                    ViewHolder holder = new ViewHolder(view);
+                    return holder;
           }
-
 
           @Override
-          public int getCount() {
+          public void onBindViewHolder(ViewHolder holder, int position) {
+                    holder.title.setText(data.get(position));
+                    holder.cb.setChecked(isChecked[position]);
+                    //回傳Item的View的按鈕監聽
+                    holder.itemView.setOnClickListener(new View.OnClickListener() {
+                              @Override
+                              public void onClick(View v) {
+                                        isChecked[position] = !isChecked[position];
+                                        notifyDataSetChanged();
+                              }
+                    });
+          }
+
+          @Override
+          public int getItemCount() {
                     return data.size();
           }
 
-          @Override
           public String getItem(int position) {
                     return data.get(position);
           }
 
-          @Override
-          public long getItemId(int position) {
-                    return position;
+          public boolean getItemChecked(int position) {
+                    return isChecked[position];
           }
 
-          @Override
-          public View getView(int position, View convertView, ViewGroup parent) {
-                    View view = convertView;
-                    ViewHolder holder;
-                    if (view == null) {
-                              holder = new ViewHolder();
-                              view = LayoutInflater.from(context).inflate(resID, null);
+          class ViewHolder extends RecyclerView.ViewHolder {
+                    CheckBox cb;
+                    TextView title;
 
-                              holder.cb = (CheckBox) view.findViewById(R.id.m0200_label_check);
-                              holder.title = (TextView) view.findViewById(R.id.m0200_label_title);
-
-
-                              view.setTag(holder);
-                    } else {
-                              holder = (ViewHolder) view.getTag();
+                    ViewHolder(View view) {
+                              super(view);
+                              cb = (CheckBox) view.findViewById(R.id.m0200_label_check);
+                              title = (TextView) view.findViewById(R.id.m0200_label_text);
                     }
 
-                    holder.title.setText(data.get(position));
-                    Log.d("555","001");
-                    return view;
           }
 }

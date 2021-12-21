@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,6 +17,7 @@ public class M0502 extends AppCompatActivity  {
     private Intent intent=new Intent();
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +26,8 @@ public class M0502 extends AppCompatActivity  {
     }
 
     private void setupViewComponent() {
+
+//        ---------------------------------------------
         Intent intent = this.getIntent();
         String mode_title = intent.getStringExtra("class_title");
         this.setTitle(mode_title);
@@ -38,6 +40,7 @@ public class M0502 extends AppCompatActivity  {
 
     }
 
+
     @Override
     public void onBackPressed() {
 //        super.onBackPressed();
@@ -47,7 +50,7 @@ public class M0502 extends AppCompatActivity  {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //        return super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.m0500, menu);
+        getMenuInflater().inflate(R.menu.m0500_itemmenu, menu);
        return true;
     }
 
@@ -56,7 +59,7 @@ public class M0502 extends AppCompatActivity  {
         int id = item.getItemId();
         switch (item.getItemId()){
 
-            case R.id.action_settings:
+            case R.id.m0500_finish:
                 this.finish();
                 break;
             case R.id.m0500_itemback:

@@ -37,7 +37,7 @@ public class M050301 extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //        return super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.m0500, menu);
+        getMenuInflater().inflate(R.menu.m0500_itemmenu, menu);
         return true;
     }
 
@@ -46,7 +46,7 @@ public class M050301 extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()){
 
-            case R.id.action_settings:
+            case R.id.m0500_finish:
                 this.finish();
                 break;
             case R.id.m0500_itemback:

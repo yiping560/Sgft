@@ -18,9 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".M0401"></activity>
-        <activity android:name=".M0402"></activity>
-        <activity android:name=".M0403"></activity>
+
     </application>
 
 </manifest>

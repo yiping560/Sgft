@@ -170,41 +170,31 @@
 
     <Button
         android:id="@+id/m0402_b002"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="31dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="26dp"
         android:background="@color/Aqua"
+        android:gravity="center"
         android:text="@string/m0402_b002"
         android:textColor="@color/Black"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="162dp"
-        android:layout_marginEnd="130dp"
-        android:text="@string/m0402_t008"
-        android:textColor="@color/Black"
-        android:textSize="20sp"
+        android:textSize="@dimen/fontsize"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="48dp"
+        android:layout_below="@+id/m0402_b002"
+        android:layout_alignEnd="@+id/m0402_b002"
+        android:layout_marginTop="24dp"
+        android:background="@color/Aqua"
+        android:gravity="center"
         android:text="@string/m0402_b003"
         android:textColor="@color/Black"
-        android:textSize="20sp"
+        android:textSize="@dimen/fontsize"
         android:textStyle="bold" />
 
     <Button

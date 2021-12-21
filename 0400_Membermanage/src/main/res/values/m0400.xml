@@ -12,4 +12,7 @@
     <string name="m0400_item">結束</string>
     <string name="m0401_item">新增好友</string>
     <string name="action_settings">結束</string>
+    <string name="m0500_itemback">返回</string>
+    <string name="item02">尋照朋友</string>
+    <string name="item03">朋友列表</string>
 </resources>

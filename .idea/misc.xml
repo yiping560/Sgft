@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/activity_m0100.xml" value="0.3115423901940756" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/aleartdialog.xml" value="0.25555555555555554" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/fragment_blank.xml" value="0.16979166666666667" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/login_dlg.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/m0100.xml" value="0.33" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/m0200.xml" value="0.3177083333333333" />
@@ -25,12 +26,17 @@
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/m0700.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/spinner0600_iteam.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/layout/welcome.xml" value="0.3177083333333333" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/bottom.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/bottom_menu.xml" value="0.3177083333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0100.xml" value="0.3223958333333333" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0100_buttom.xml" value="0.3223958333333333" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0100_button.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0200_bottom_nemu.xml" value="0.29907407407407405" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0200_menu.xml" value="0.3177083333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0300_menu.xml" value="0.25555555555555554" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0400.xml" value="0.25555555555555554" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0500.xml" value="0.3223958333333333" />
+        <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0500_bottom_menu.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/m0900.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/menu0400.xml" value="0.3223958333333333" />
         <entry key="..\:/android-work/Sgft/0100_Homepage/src/main/res/menu/menu0600.xml" value="0.1703125" />

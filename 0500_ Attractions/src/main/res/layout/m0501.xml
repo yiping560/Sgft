@@ -11,7 +11,7 @@
         android:id="@+id/m0501_t001"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/Silver"
+        android:background="@drawable/grey"
         android:gravity="center"
         android:text="@string/m0501_t001"
         android:textSize="@dimen/fontsize" />
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:text="@string/myname15"
+        android:textColor="@color/White"
         android:textSize="@dimen/fontsize" />
 
 </LinearLayout>

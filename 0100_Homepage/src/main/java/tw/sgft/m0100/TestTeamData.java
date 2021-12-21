@@ -1,5 +1,10 @@
 package tw.sgft.m0100;
 
+import android.content.Context;
+import android.util.Log;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.List;
 

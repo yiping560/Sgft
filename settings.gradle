@@ -9,10 +9,10 @@ dependencyResolutionManagement {
 rootProject.name = "Sgft"
 include ':0100_Homepage'
 include ':0700_ Stay'
+include ':0200_TeamManager'
+include ':0300_Journeymanage'
 include ':0500_ Attractions'
 include ':0600_Delicacy'
-include ':0200_TeamManager'
 include ':0400_Membermanage'
-include ':0300_Journeymanage'
 
 include ':mysqltest'

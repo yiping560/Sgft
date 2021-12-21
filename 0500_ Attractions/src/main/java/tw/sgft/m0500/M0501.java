@@ -50,7 +50,7 @@ public class M0501 extends ListActivity {
         l2=(LinearLayout)findViewById(R.id.l2);
 
        //---------------------------------開頭音樂
-        startmusic= MediaPlayer.create(getApplication(),R.raw.music01);
+        startmusic= MediaPlayer.create(getApplication(),R.raw.music02);
         startmusic.start();
 
 
@@ -103,7 +103,7 @@ public class M0501 extends ListActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //        return super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.m0500,menu);
+        getMenuInflater().inflate(R.menu.m0500_bottom_menu,menu);
         return true;
     }
 
@@ -121,12 +121,7 @@ public class M0501 extends ListActivity {
                 l2.setVisibility(View.VISIBLE);
 
                 break;
-            case R.id.action_settings:
-                this.finish();
-                break;
-            case R.id.m0500_itemback:
-                this.finish();
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }

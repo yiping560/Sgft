@@ -12,12 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/m0200_bottombar"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back03">
 
         <LinearLayout
             android:id="@+id/m0200_layout_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00000000"
             android:orientation="vertical"
             android:padding="@dimen/m0200_pa0010"
             android:visibility="invisible">
@@ -61,7 +63,7 @@
             android:id="@+id/m0200_layout_edit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/Silver"
+            android:background="#00000000"
             android:orientation="vertical"
             android:visibility="invisible">
 
@@ -147,13 +149,19 @@
                     android:text="選擇好友" />
             </TableRow>
 
+            <ListView
+                android:id="@+id/m0200_edit_showlist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/m0200_layout_team_manager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/Silver"
+            android:background="#00000000"
             android:orientation="vertical"
             android:padding="@dimen/m0200_pa0010"
             android:visibility="invisible">
@@ -240,6 +248,7 @@
             android:id="@+id/m0200_layout_item_listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00000000"
             android:orientation="vertical"
             android:visibility="invisible">
 
@@ -266,12 +275,14 @@
                     android:textColor="@color/Black"
                     android:textSize="@dimen/fontsize"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
-            <ListView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/m0200_item_list"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></ListView>
+                android:layout_height="0dp"
+                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 

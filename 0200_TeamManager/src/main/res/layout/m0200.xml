@@ -147,6 +147,12 @@
                     android:text="選擇好友" />
             </TableRow>
 
+            <ListView
+                android:id="@+id/m0200_edit_showlist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+
         </LinearLayout>
 
         <LinearLayout
@@ -266,12 +272,14 @@
                     android:textColor="@color/Black"
                     android:textSize="@dimen/fontsize"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
-            <ListView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/m0200_item_list"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"></ListView>
+                android:layout_height="0dp"
+                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 

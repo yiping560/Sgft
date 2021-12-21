@@ -13,7 +13,7 @@
         android:id="@+id/m0502_t001"
         android:layout_width="match_parent"
         android:layout_height="@dimen/p50"
-        android:background="@color/purple_500"
+        android:background="@drawable/box_green"
         android:gravity="center"
         android:text="@string/m0502_t001"
         android:textColor="@color/Yellow"
@@ -91,8 +91,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/p100"
+                    android:layout_marginBottom="@dimen/p05"
+                    android:background="@drawable/box_grey30"
                     android:text="@string/m0502_b002"
-                    android:textSize="@dimen/activity_vertical_margin" />
+                    android:textSize="@dimen/fontsize16" />
             </TableRow>
 
             <TextView
@@ -123,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/p50"
                     android:layout_marginBottom="@dimen/p10"
+                    android:background="@drawable/box_grey30"
                     android:text="@string/m0502_b001"
                     android:textSize="@dimen/fontsize16" />
             </TableRow>
@@ -139,7 +142,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/p10"
-        android:background="@color/teal_200"
+        android:background="@drawable/green"
         android:gravity="center"
         android:text="@string/m0502_t011"
         android:textSize="@dimen/fontsize"

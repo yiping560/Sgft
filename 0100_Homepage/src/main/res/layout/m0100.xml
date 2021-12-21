@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo46"
+    android:background="@drawable/logo46kk"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -15,6 +15,7 @@
         android:background="@drawable/back03"
         android:orientation="vertical"
         android:padding="@dimen/p10"
+        android:visibility="visible"
         tools:context=".M0100">
 
         <Button
@@ -29,7 +30,8 @@
             android:background="@android:drawable/btn_default"
             android:text="@string/m0100_b001"
             android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
+            android:textSize="@dimen/fontsize"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/m0100_b002"
@@ -43,7 +45,8 @@
             android:background="@android:drawable/btn_default"
             android:text="@string/m0100_b002"
             android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
+            android:textSize="@dimen/fontsize"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/m0100_b003"
@@ -57,7 +60,8 @@
             android:background="@android:drawable/btn_default"
             android:text="@string/m0100_b003"
             android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
+            android:textSize="@dimen/fontsize"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/m0100_b004"
@@ -107,12 +111,22 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="33dp"
-            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="132dp"
             android:text="@string/myname07"
             android:textColor="@color/Yellow"
             android:textSize="@dimen/fontsize" />
 
-
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/p60"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/p05"
+            android:layout_marginBottom="@dimen/p10"
+            android:background="@color/Silver"
+            app:menu="@menu/m0100_buttom" />
     </RelativeLayout>
+
 </LinearLayout>

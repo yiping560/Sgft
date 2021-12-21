@@ -1,6 +1,10 @@
 package tw.sgft.m0100;
 
-import android.content.Intent;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -8,20 +12,22 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.BounceInterpolator;
+import android.widget.Adapter;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.CheckedTextView;
 import android.widget.EditText;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,9 +37,16 @@ public class M0200 extends AppCompatActivity {
           private Travel data;
           //行程和團友，先用List<Stiring>
           private List<String> targetdata, matedata;
+
+          //顯示暫存用
+          private List<String> showList;
+          private ListView showListView;
+          private ArrayAdapter<String> showListAdapter;
+
           BaseAdapter adapter;
           CustomLabelAdapter mateitemadapter, targetitemadapter;
-          private ListView lv001, itemlistview;
+          private ListView lv001;
+          private RecyclerView itemlistview;
           private BottomNavigationView _bottomBar;
           //          private AppBarConfiguration _appBarConfiguration;
           RelativeLayout mainlayout;
@@ -53,10 +66,10 @@ public class M0200 extends AppCompatActivity {
           }
 
           private void setupViewComponent() {
-              Intent intent = this.getIntent();
-              String mode_title = intent.getStringExtra("class_title");
-              this.setTitle(mode_title);
+
                     data = TestDataRepository.getInstance().getData();
+
+                    showList = new ArrayList<>();
 
                     //抓物件，整個Layout(現在沒用)
                     mainlayout = (RelativeLayout) findViewById(R.id.m0200_main_layout);
@@ -72,7 +85,8 @@ public class M0200 extends AppCompatActivity {
 //                    _appBarConfiguration = new AppBarConfiguration.Builder(new int[]{R.id.m0200_team_info,R.id.m0200_team_list}).build();
 
                     lv001 = (ListView) findViewById(R.id.m0200_listview_lv001);
-                    itemlistview = (ListView) findViewById(R.id.m0200_item_list);
+                    showListView = (ListView) findViewById(R.id.m0200_edit_showlist);
+                    itemlistview = (RecyclerView) findViewById(R.id.m0200_item_list);
 
                     e001 = (EditText) findViewById(R.id.m0200_set002_e001);
 
@@ -83,14 +97,6 @@ public class M0200 extends AppCompatActivity {
                     cb001 = findViewById(R.id.m0200_set002_select_b001);
                     cb002 = findViewById(R.id.m0200_set002_select_b002);
                     ilist_b001 = findViewById(R.id.m0200_item_list_b001);
-
-                    //anim
-//                    mainlayout.setBackgroundResource(R.drawable.back11);
-                    Animation anim = AnimationUtils.loadAnimation(this, R.anim.anim_test_in);
-                    anim.setInterpolator(new BounceInterpolator());
-                    mainlayout.setAnimation(anim);
-//                    mainlayout.setBackgroundResource(R.drawable.back11);
-                    //
 
                     b001.setOnClickListener(buttonOn);
                     apply.setOnClickListener(buttonOn);
@@ -110,10 +116,11 @@ public class M0200 extends AppCompatActivity {
                     targetdata = Arrays.asList(getResources().getStringArray(R.array.m0200_dummy_date));
                     matedata = Arrays.asList(getResources().getStringArray(R.array.m0200_dummy_userName));
 
-                    mateitemadapter = new CustomLabelAdapter(getApplicationContext(), matedata, R.layout.m0200_lite_label);
-                    targetitemadapter = new CustomLabelAdapter(getApplicationContext(), targetdata, R.layout.m0200_lite_label);
+                    mateitemadapter = new CustomLabelAdapter(matedata, R.layout.m0200_lite_label);
+                    targetitemadapter = new CustomLabelAdapter(targetdata, R.layout.m0200_lite_label);
 
-                    itemlistview.setOnItemClickListener(itemOn);
+                    showListAdapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item,showList);
+
           }
 
           private View.OnClickListener buttonOn = new View.OnClickListener() {
@@ -145,17 +152,20 @@ public class M0200 extends AppCompatActivity {
                                                   break;
                                         case R.id.m0200_set002_select_b002:
                                                   itemlistview.setAdapter(mateitemadapter);
-//                                                  lvadapter.notifyDataSetChanged();
+                                                  itemlistview.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
                                                   ChangePage(R.id.m0200_layout_item_listview);
                                                   Toast.makeText(getApplicationContext(), "選擇好友", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_item_list_b001:
-
-                                                  Toast.makeText(getApplicationContext(), mateitemadapter.getCount() + "", Toast.LENGTH_SHORT).show();
-
-                                                  for (int i = 0; i < mateitemadapter.getCount(); i++) {
-                                                            String temp = mateitemadapter.getItem(i);
+                                                  for (int i = 0; i < mateitemadapter.getItemCount(); i++) {
+                                                            String str = mateitemadapter.getItem(i);
+                                                            //List<>().contains(object o)回傳一個boolean，如果List內包含該物件
+                                                            if (mateitemadapter.getItemChecked(i) && !showList.contains(str)) {
+                                                                      showList.add(str);
+                                                            }
                                                   }
+                                                  showListView.setAdapter(showListAdapter);
+                                                  ChangePage(R.id.m0200_layout_edit);
                                                   break;
                               }
 
@@ -180,8 +190,7 @@ public class M0200 extends AppCompatActivity {
                                                   Toast.makeText(getApplicationContext(), "888", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_item_list:
-                                                  ItemCheck(view);
-                                                  view.setBackgroundColor(getColor(R.color.Teal));
+
                                                   Toast.makeText(getApplicationContext(), "999", Toast.LENGTH_SHORT).show();
                                                   break;
                               }
@@ -208,20 +217,12 @@ public class M0200 extends AppCompatActivity {
                     switch (item.getItemId()) {
                               case R.id.action_settings:
                                         this.finish();
-//                                        this.onDestroy();
                                         break;
-//                                        case R.id.m0200:
-//                                        break;
                     }
 
                     return super.onOptionsItemSelected(item);
           }
 
-//          @Override
-//          protected void onDestroy() {
-//                    super.onDestroy();
-//                    System.exit(0);
-//          }
 
           private NavigationBarView.OnItemSelectedListener bottomOn = new NavigationBarView.OnItemSelectedListener() {
                     @Override
@@ -249,18 +250,5 @@ public class M0200 extends AppCompatActivity {
                     findViewById(pageID).setVisibility(View.VISIBLE);
 
                     currentPageID = pageID;
-          }
-
-          private void ChangeList(int resID) {
-                    switch (resID) {
-                              case R.id.m0200_listview_lv001:
-                                        break;
-                              case R.id.m0200_item_list:
-                                        break;
-                    }
-          }
-
-          private void ItemCheck(View v) {
-
           }
 }

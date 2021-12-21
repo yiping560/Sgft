@@ -7,13 +7,15 @@
     <CheckBox
         android:id="@+id/m0200_label_check"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
     <TextView
-        android:id="@+id/m0200_label_title"
+        android:id="@+id/m0200_label_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/Aqua"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
         android:text="TextView"
         android:textColor="@color/Black"
         android:textSize="@dimen/fontsize"

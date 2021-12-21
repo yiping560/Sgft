@@ -6,16 +6,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class M0100 extends AppCompatActivity {
 
@@ -25,7 +25,8 @@ public class M0100 extends AppCompatActivity {
     private RelativeLayout r_layout;
     private int ss;
     private RelativeLayout r1_laout;
-    private Intent intent2;
+    private Intent intent2,intent3;
+    private BottomNavigationView bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,9 @@ public class M0100 extends AppCompatActivity {
         b004=(Button)findViewById(R.id.m0100_b004);
         b005=(Button)findViewById(R.id.m0100_b005);
         b006=(Button)findViewById(R.id.m0100_b006);
+        bottomBar=findViewById(R.id.bottom_menu);
+        bottomBar.setOnItemSelectedListener(bottomOn);
+
 
         // ---開機動畫---
         r_layout = (RelativeLayout) findViewById(R.id.m0100_linear01);
@@ -62,6 +66,40 @@ public class M0100 extends AppCompatActivity {
         b005.setOnClickListener(b001on);
         b006.setOnClickListener(b001on);
     }
+
+    NavigationBarView.OnItemSelectedListener bottomOn=new NavigationBarView.OnItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()){
+                case R.id.Item1:
+                    intent3=new Intent(M0100.this,M0500.class);
+                    intent3.putExtra("class_title",getString(R.string.m0100_b001));
+                    intent3.setClass(M0100.this,M0500.class);
+//                ChangePage(R.id.m0500d_layout);
+//                    layout_show(1);
+//                l01.setVisibility(View.VISIBLE);
+//                l02.setVisibility(View.INVISIBLE);
+                    break;
+                case R.id.Item2:
+                    intent3=new Intent(M0100.this,M0600.class);
+                    intent3.putExtra("class_title",getString(R.string.m0100_b002));
+                    intent3.setClass(M0100.this,M0600.class);
+//                ChangePage(R.id.m0500f_layout);
+//                    layout_show(2);
+//                l01.setVisibility(View.INVISIBLE);
+//                l02.setVisibility(View.VISIBLE);
+                    break;
+                case R.id.Item3:
+                    intent3=new Intent(M0100.this,M0700.class);
+                    intent3.putExtra("class_title",getString(R.string.m0100_b003));
+                    intent3.setClass(M0100.this,M0700.class);
+//                layout_show(3);
+                    break;
+            }
+            startActivity(intent3);
+            return true;
+        }
+    };
 
     @Override
     public void onBackPressed() {
@@ -87,28 +125,28 @@ public class M0100 extends AppCompatActivity {
 //
         int id = item.getItemId();
         switch (id) {
-            case R.id.item1:
+            case R.id.Item1:
 //                b001.setVisibility(View.VISIBLE);
 //                b002.setVisibility(View.INVISIBLE);
 //                b003.setVisibility(View.INVISIBLE);
-                intent2=new Intent(this,M0500.class);
-                intent2.putExtra("class_title",getString(R.string.m0100_b001));
-                intent2.setClass(M0100.this,M0500.class);
+//                intent2=new Intent(this,M0500.class);
+//                intent2.putExtra("class_title",getString(R.string.m0100_b001));
+//                intent2.setClass(M0100.this,M0500.class);
 //                return true;
 //                r_layout.setVisibility(View.INVISIBLE);
 //                r1_laout.setVisibility(View.VISIBLE);  這行賄閃退
                 ss=1;
                 break;
             case R.id.Item2:
-                intent2=new Intent(this,M0600.class);
-                intent2.putExtra("class_title",getString(R.string.m0100_b002));
-                intent2.setClass(M0100.this,M0600.class);
+//                intent2=new Intent(this,M0600.class);
+//                intent2.putExtra("class_title",getString(R.string.m0100_b002));
+//                intent2.setClass(M0100.this,M0600.class);
                 ss=2;
                 break;
             case R.id.Item3:
-                intent2=new Intent(this,M0700.class);
-                intent2.putExtra("class_title",getString(R.string.m0100_b003));
-                intent2.setClass(M0100.this,M0700.class);
+//                intent2=new Intent(this,M0700.class);
+//                intent2.putExtra("class_title",getString(R.string.m0100_b003));
+//                intent2.setClass(M0100.this,M0700.class);
                 ss=3;
                 break;
             case R.id.Item4:

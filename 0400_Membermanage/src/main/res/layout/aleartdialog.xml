@@ -23,7 +23,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:hint="帳號"
-        android:text="@string/m0400_e001"
+
         android:textSize="@dimen/Spacing"
         android:textStyle="bold" />
     <requestFocus />
@@ -35,7 +35,6 @@
         android:layout_gravity="center"
         android:hint="密碼"
         android:maxLength="10"
-        android:text="@string/m0400_e002"
         android:textSize="15dp" />
     <requestFocus />
     <LinearLayout

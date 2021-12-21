@@ -16,7 +16,7 @@
             android:id="@+id/m050301_t001"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/purple_200"
+            android:background="@drawable/green"
             android:gravity="center"
             android:text="@string/m050301_t001"
             android:textSize="@dimen/fontsize" />
@@ -26,21 +26,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/p20"
-        android:background="@color/teal_200">
+        android:background="@color/teal_700">
 
         <ImageView
             android:id="@+id/m05031_v001"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/img11" />
+            app:srcCompat="@drawable/imag11" />
 
         <TextView
             android:id="@+id/m050301_t002"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/p10"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/p03"
+            android:background="@color/Aqua"
             android:gravity="center"
             android:text="@string/m0500_t008"
+            android:textColor="@color/Black"
             android:textSize="@dimen/fontsize" />
 
     </TableRow>
@@ -49,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/p20"
-        android:background="@color/teal_200">
+        android:background="@color/Teal">
 
         <ImageView
             android:id="@+id/m05031_v002"
@@ -60,8 +62,9 @@
         <TextView
             android:id="@+id/m05031_t003"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/p10"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/p03"
+            android:background="@color/Aqua"
             android:gravity="center"
             android:text="@string/m0500_t009"
             android:textSize="@dimen/fontsize" />
@@ -71,7 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/p20"
-        android:background="@color/teal_200">
+        android:background="@color/Teal">
 
         <ImageView
             android:id="@+id/m05031_v003"
@@ -82,37 +85,46 @@
         <TextView
             android:id="@+id/m05031_t004"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/p03"
             android:layout_marginTop="@dimen/p10"
+            android:background="@color/Aqua"
             android:gravity="center"
             android:text="@string/m0500_t010"
-            android:textSize="@dimen/fontsize" />
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/p150"
-        android:background="@color/teal_200">
+        android:background="#00000000">
 
         <Button
             android:id="@+id/m0500301_t003"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/p120"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/p20"
+            android:background="@drawable/box_orange"
             android:text="@string/m050301_t003"
             android:textSize="@dimen/fontsize" />
 
         <Button
             android:id="@+id/m050301_t004"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/p120"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/p10"
+            android:background="@drawable/box_orange"
             android:text="@string/m050301_t004"
             android:textSize="@dimen/fontsize" />
 
         <Button
             android:id="@+id/m050301_t005"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/p120"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/p10"
+            android:background="@drawable/box_orange"
             android:text="@string/m050301_t005"
             android:textSize="@dimen/fontsize" />
 
