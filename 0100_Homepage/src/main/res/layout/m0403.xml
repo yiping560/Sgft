@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/m0403"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/Silver"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/m0403_t003"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/Margins"
+            android:layout_marginEnd="@dimen/Margins"
+            android:background="@color/White"
+            android:text="@string/m0403_t001"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/m0403_b001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m0403_t003"
+            android:layout_alignEnd="@+id/m0403_t003"
+            android:layout_marginTop="@dimen/Spacing"
+            android:text="@string/m0403_b001"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="388dp"
+            android:layout_height="404dp"
+            android:layout_below="@+id/m0403_b001"
+            android:layout_alignEnd="@+id/m0403_b001"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/m0403_t002"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/m0403_chb01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Gray"
+                    android:buttonTint="@color/Navy"
+                    android:checked="true"
+                    android:text="@string/m0403_chb03"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/m0403_chb02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Gray"
+                    android:buttonTint="@color/Navy"
+                    android:checked="true"
+                    android:text="@string/m0403_chb02"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <CheckBox
+                    android:id="@+id/m0403_chb03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Gray"
+                    android:buttonTint="@color/Navy"
+                    android:checked="true"
+                    android:text="@string/m0403_chb03"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/m0403_b002"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="9dp"
+            android:text="@string/m0403_b002"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

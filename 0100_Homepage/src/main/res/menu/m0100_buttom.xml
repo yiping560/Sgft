@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Item1"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="@string/m0100_b001" />
+    <item
+        android:id="@+id/Item2"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/m0100_b002" />
+    <item
+        android:id="@+id/Item3"
+        android:icon="@android:drawable/stat_sys_phone_call_on_hold"
+        android:title="@string/m0100_b003" />
+</menu>

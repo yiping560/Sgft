@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Attraction">
+        <item>Top City臺中大遠百 </item>
+        <item>老樹根魔法木工坊</item>
+        <item>梧棲港觀光漁市</item>
+        <item>八二三紀念公園</item>
+        <item>台灣氣球博物館 </item>
+        <item>精明一街</item>
+        <item>臺中公園</item>
+        <item>蝴蝶小鎮休閒園區</item>
+        <item>竹山社寮敬聖亭 </item>
+        <item> 蟬說雅築 </item>
+        <item>埔里寶湖宮地母廟</item>
+        <item>廣興紙寮</item>
+    </string-array>
+    <string-array name="Attrainformation">
+        <item>臺中市407西屯區臺灣大道三段251號</item>
+        <item>臺中市402南區樹義路63號</item>
+        <item>臺中市436清水區海濱里北堤路30號 </item>
+        <item>臺中市406北屯區昌平東五路</item>
+        <item>臺中市429神岡區大豐路5段505號</item>
+        <item>臺中市403西區精明一街 </item>
+        <item>臺中市404北區雙十路一段65號</item>
+        <item>南投縣埔里鎮南村里南村路6-2號</item>
+        <item>南投縣竹山鎮集山路一段1738號</item>
+        <item>南投縣信義鄉東埔村30號</item>
+        <item>南投縣南投縣埔里鎮枇杷路94號</item>
+        <item> 南投縣埔里鎮鐵山里鐵山路310號</item>
+    </string-array>
+    <string-array name="Attrainphone">
+        <item>04-37022168</item>
+        <item>04-22628621</item>
+        <item>04-26571586</item>
+        <item>04-22289111</item>
+        <item>04-25284525</item>
+        <item>04-23286345</item>
+        <item>04-22224174</item>
+        <item>049-2913311</item>
+        <item>049-2643406</item>
+        <item>049-2702310</item>
+        <item>049-2982873</item>
+        <item>049-2913037</item>
+    </string-array>
+</resources>
