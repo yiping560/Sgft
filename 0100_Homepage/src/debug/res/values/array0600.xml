@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="descr">
+        <item>基隆市</item>
+        <item>台北市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>新竹市</item>
+        <item>新竹縣</item>
+        <item>苗栗縣</item>
+        <item>台中市</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義市</item>
+        <item>嘉義縣</item>
+        <item>台南市</item>
+        <item>高雄市</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>台東縣</item>
+    </string-array>
+
+    <string-array name="m00">
+        <item>請選擇地區</item>
+        <item>仁愛區</item>
+        <item>中正區</item>
+    </string-array>
+
+    <string-array name="m01">
+        <item>請選擇地區</item>
+        <item>大安區</item>
+        <item>內湖區</item>
+    </string-array>
+
+    <string-array name="m02">
+        <item>請選擇地區</item>
+        <item>板橋區</item>
+        <item>三重區</item>
+    </string-array>
+
+    <string-array name="m07">
+        <item>請選擇地區</item>
+        <item>西區</item>
+        <item>中區</item>
+    </string-array>
+
+    <string-array name="m0001">
+    <item>福圓北方風味館</item>
+    <item>粥師傅廣東粥</item>
+    <item>美有計劃Cafe</item>
+    <item>喬義思choice窯烤手作廚房</item>
+    <item>福圓北方風味館</item>
+    <item>粥師傅廣東粥</item>
+    <item>美有計劃Cafe</item>
+    <item>喬義思choice窯烤手作廚房</item>
+    </string-array>
+
+    <string-array name="m0002">
+        <item>愚夫</item>
+        <item>莫初餐廳</item>
+        <item>BZ CORNER 串燒</item>
+        <item>Encounter Restaurant</item>
+        <item>愚夫</item>
+        <item>莫初餐廳</item>
+        <item>BZ CORNER 串燒</item>
+        <item>Encounter Restaurant</item>
+    </string-array>
+
+    <string-array name="m0101">
+    <item>琺蘭綺瑥朵英式茶餐館</item>
+    <item>瑪黑餐酒</item>
+    <item>Jimmys Kitchen</item>
+    <item>blu koi</item>
+    <item>琺蘭綺瑥朵英式茶餐館</item>
+    <item>瑪黑餐酒</item>
+    <item>Jimmys Kitchen</item>
+    <item>blu koi</item>
+    </string-array>
+
+    <string-array name="m0102">
+        <item>莫爾頓牛排館</item>
+        <item>玉琢精緻料理</item>
+        <item>小林英夫</item>
+        <item>好米亞</item>
+        <item>莫爾頓牛排館</item>
+        <item>玉琢精緻料理</item>
+        <item>小林英夫</item>
+        <item>好米亞</item>
+    </string-array>
+
+    <string-array name="m0201">
+    <item>東興野菜牛肉麵</item>
+    <item>阿卿海鮮店</item>
+    <item>升火工作室</item>
+    <item>明來餐廳</item>
+    <item>濱海餐廳</item>
+    <item>東興野菜牛肉麵</item>
+    <item>阿卿海鮮店</item>
+    <item>升火工作室</item>
+    </string-array>
+
+    <string-array name="m0202">
+        <item>東興野菜牛肉麵</item>
+        <item>阿卿海鮮店</item>
+        <item>升火工作室</item>
+        <item>明來餐廳</item>
+        <item>濱海餐廳</item>
+        <item>東興野菜牛肉麵</item>
+        <item>阿卿海鮮店</item>
+        <item>升火工作室</item>
+    </string-array>
+
+    <string-array name="m0701">
+        <item>屋馬燒肉園邸店</item>
+        <item>金苑茶餐廳</item>
+        <item>法義風味人文餐廳</item>
+        <item>禾間糧倉</item>
+        <item>屋馬燒肉園邸店</item>
+        <item>金苑茶餐廳</item>
+        <item>法義風味人文餐廳</item>
+        <item>禾間糧倉</item>
+    </string-array>
+
+    <string-array name="m0702">
+        <item>東興野菜牛肉麵</item>
+        <item>阿卿海鮮店</item>
+        <item>升火工作室</item>
+        <item>明來餐廳</item>
+        <item>東興野菜牛肉麵</item>
+        <item>阿卿海鮮店</item>
+        <item>升火工作室</item>
+        <item>明來餐廳</item>
+    </string-array>
+
+    <string name="m0600_city">地區:</string>
+    <string name="m0600_t001">餐廳:</string>
+
+</resources>

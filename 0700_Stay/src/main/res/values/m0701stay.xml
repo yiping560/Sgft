@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="m0101">
+        <item>力歐時尚旅館西門館</item>
+        <item>山啄木青年旅館</item>
+        <item>順億商務旅館</item>
+        <item>月相情境休閒旅館</item>
+        <item>迷路小章魚小旅館</item>
+        <item>歐遊國際精品旅館花蓮館</item>
+        <item>歐克莊園旅館</item>
+    </string-array>
+    <string-array name="m0102">
+        <item>臺北市萬華區康定路25巷36弄4,6號2-4樓</item>
+        <item>宜蘭縣宜蘭市東港路二段298號</item>
+        <item>嘉義市西區嘉義市西區中山路617號10樓</item>
+        <item>臺南市學甲區華宗路152號</item>
+        <item>屏東縣恆春鎮南灣路60號</item>
+        <item>花蓮縣吉安鄉勝安村26鄰中央路三段98號</item>
+        <item>花蓮縣花蓮市國興里5鄰建興街110巷4弄1號</item>
+    </string-array>
+
+
+</resources>

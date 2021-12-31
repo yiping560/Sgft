@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0701_t001">旅宿類型</string>
+    <string name="m0701_t002">(縣)市</string>
+    <string name="m0701_t003">區域</string>
+    <string name="m0701_mb001">圖片介紹</string>
+    <string name="m0701_mb002">選取勾選</string>
+    <string name="m0701_t004">選擇:</string>
+    <string name="m0701_b001">搜尋確定</string>
+
+    <string name="m0701_rb001">飯店</string>
+    <string name="m0701_rb002">旅館</string>
+    <string name="m0701_rb003" >民宿</string>
+    <string name="action_settings">返回</string>
+
+
+</resources>

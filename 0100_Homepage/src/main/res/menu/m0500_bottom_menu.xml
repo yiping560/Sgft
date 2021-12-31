@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/m0500_item01"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="100"
+        android:title="@string/m0500_item02" />
+    <item
+        android:id="@+id/m0500_item02"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:orderInCategory="200"
+        android:title="@string/m0500_item01" />
+    <item
+        android:id="@+id/m0500_item03"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:orderInCategory="300"
+        android:title="@string/m0500_item03" />
+</menu>

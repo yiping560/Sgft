@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back03"
+    android:orientation="vertical"
+    android:padding="@dimen/p10"
+    tools:context=".M0702">
+
+    <Button
+        android:id="@+id/m0702_b004"
+        android:layout_width="@dimen/p100"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start"
+        android:layout_marginTop="@dimen/p10"
+        android:background="@color/White"
+        android:text="@string/m0702_b004"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="85dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/m0702_t001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/p10"
+            android:background="@color/White"
+            android:gravity="center"
+            android:minWidth="88dp"
+            android:minHeight="44dp"
+            android:text="@string/m0702_t001"
+            android:textColor="@color/Teal"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
+            tools:layout_conversion_absoluteHeight="32dp"
+            tools:layout_conversion_absoluteWidth="180dp"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="20dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p10">
+
+        <Button
+            android:id="@+id/m0702_b001"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="@dimen/p170"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/p20"
+            android:background="@android:drawable/btn_default"
+            android:text="@string/m0702_b001"
+            android:textColor="@color/teal_700"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="85dp"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <Button
+            android:id="@+id/m0702_b002"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="@dimen/p170"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/p20"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center"
+            android:text="@string/m0702_b002"
+            android:textColor="@color/Teal"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="85dp"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+    </TableRow>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p350"
+        android:visibility="invisible">
+
+    </WebView>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p85"
+        android:layout_marginTop="@dimen/p10"/>
+
+</LinearLayout>

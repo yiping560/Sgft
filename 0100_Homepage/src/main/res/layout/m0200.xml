@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m0200_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/m0200_bottombar"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/m0200_layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/m0200_pa0010"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/m0200_set001_t001"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/m0200_t001"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m0200_set001_b001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_default"
+                    android:text="@string/m0200_b001_AddFile"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/m0200_listview_lv001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/m0200_layout_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Silver"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/m0200_set002_e001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.5"
+                    android:hint="@string/m0200_edit_e001_hint"
+                    android:inputType="text"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m0200_set002_apply_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/m0200_edit_apply_button" />
+
+                <Button
+                    android:id="@+id/m0200_set002_cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/m0200_edit_cancel_button" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/m0200_set002_t001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.33"
+                    android:hint="(這裡是行程)"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m0200_set002_select_b001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="選擇行程" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/m0200_set002_t002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.33"
+                    android:hint="(這裡是邀請好友)"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m0200_set002_select_b002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="選擇好友" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/m0200_edit_showlist"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/m0200_layout_team_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Silver"
+            android:orientation="vertical"
+            android:padding="@dimen/m0200_pa0010"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/m0200_team_manager_t001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="團名"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                app:srcCompat="@drawable/googlemap" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/m0201_team_manager_t002"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/m0200_team_manager_sp001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_default"
+                    android:entries="@array/m0201_select_mesage_to"
+                    android:gravity="center_horizontal|center_vertical" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/m0200_team_manager_sp002"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/btn_default"
+                    android:entries="@array/m0201_select_mesage_info"
+                    android:gravity="center_horizontal|center_vertical" />
+
+                <Button
+                    android:id="@+id/m0200_team_manager_b001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@android:drawable/btn_default"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/m0201_team_manager_b001"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <Button
+                android:id="@+id/m0200_team_manager_emergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m0201_team_manager_emergency" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/m0200_layout_item_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/m0200_item_list_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/m0200_item_list_b001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/m0200_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/m0200_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/Gray"
+        app:itemIconTint="@color/Navy"
+        app:itemTextColor="@color/Navy"
+        app:menu="@menu/m0200_bottom_nemu" />
+
+</RelativeLayout>

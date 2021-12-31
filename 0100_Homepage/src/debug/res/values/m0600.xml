@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="m0600_b001">附近餐廳</string>
+        <string name="m0600_b002">地區美食</string>
+        <string name="m0600_g001">google map</string>
+
+        <string name="m0600b_txt01">選擇地區:</string>
+        <string name="m0600b_btn01">確認</string>
+        <string name="m0600b_chb01">基隆市</string>
+        <string name="m0600b_chb02">台北市</string>
+        <string name="m0600b_chb03">新北市</string>
+        <string name="m0600b_chb04">桃園市</string>
+        <string name="m0600b_chb05">新竹市</string>
+        <string name="m0600b_chb06">新竹縣</string>
+        <string name="m0600b_chb07">苗栗縣</string>
+        <string name="m0600b_chb08">台中市</string>
+        <string name="m0600b_chb09">彰化縣</string>
+        <string name="m0600b_chb10">南投縣</string>
+        <string name="m0600b_chb11">雲林縣</string>
+        <string name="m0600b_chb12">嘉義市</string>
+        <string name="m0600b_chb13">嘉義縣</string>
+        <string name="m0600b_chb14">台南市</string>
+        <string name="m0600b_chb15">高雄市</string>
+        <string name="m0600b_chb16">屏東縣</string>
+        <string name="m0600b_chb17">宜蘭縣</string>
+        <string name="m0600b_chb18">花蓮縣</string>
+        <string name="m0600b_chb19">台東縣</string>
+
+        <string name="m0600_item01">美食收藏</string>
+    <string name="m0600_item02">好友</string>
+    <string name="collect">美食1</string>
+</resources>

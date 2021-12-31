@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<!--    <string name="m030040_t000">我的行程</string>-->
+    <string name="m030040_t001">編輯行程 1</string>
+    <string name="m030040_add">+</string>
+    <string name="m030040_delete">-</string>
+    <string name="m030040_frd">編輯</string>
+    <string name="m030040_share">權限</string>
+    <string name="m030040_t002">編輯行程 2</string>
+    <string name="m030040_t003">出團行程 1</string>
+    <string name="m030040_t004">出團行程 2</string>
+
+    <string name="m030040_b009">確定</string>
+</resources>

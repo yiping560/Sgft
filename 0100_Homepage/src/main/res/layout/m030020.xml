@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:orientation="vertical"
+    android:padding="@dimen/Margins"
+    tools:context=".M030020">
+
+    <TextView
+        android:id="@+id/m030020_t000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/m030020_t000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/m030020_d001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/p20"
+        android:background="@color/Silver"
+        android:text="@string/m030020_t001"
+        android:textSize="@dimen/fontsize" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/m030020_t003"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p40"
+            android:background="@color/teal_200"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/m030020_t003"
+            android:textSize="@dimen/fontsize"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/m030020_b002"
+            android:layout_width="@dimen/p50"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/end"
+            android:text="@string/m030020_delete"
+            android:textSize="@dimen/fontsize"
+            tools:ignore="TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/m030020_t004"
+            android:layout_width="@dimen/p300"
+            android:layout_height="@dimen/p40"
+            android:background="@color/teal_200"
+            android:gravity="center"
+            android:text="@string/m030020_t004"
+            android:textSize="@dimen/fontsize"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/m030020_e004"
+            android:layout_width="@dimen/p50"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/end"
+            android:text="@string/m030020_delete"
+            android:textSize="@dimen/fontsize"
+            tools:ignore="TextContrastCheck" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/m030020_b020"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/m030020_b020"
+        android:textSize="@dimen/fontsize"
+        tools:ignore="DuplicateIds" />
+
+    <TextView
+        android:id="@+id/m030020_d002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p40"
+        android:layout_marginEnd="@dimen/p20"
+        android:background="@color/Silver"
+        android:text="@string/m030020_t002"
+        android:textSize="@dimen/fontsize" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/m030020_t005"
+                android:layout_width="@dimen/p300"
+                android:layout_height="@dimen/p40"
+                android:layout_marginTop="@dimen/Margins"
+                android:layout_marginBottom="@dimen/p20"
+                android:background="@color/purple_200"
+                android:checked="true"
+                android:gravity="center|center_vertical"
+                android:text="@string/m030020_t005"
+                android:textSize="@dimen/fontsize"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/m030020_b008"
+                android:layout_width="@dimen/p50"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/end"
+                android:layout_marginTop="@dimen/Margins"
+                android:text="@string/m030020_delete"
+                android:textSize="@dimen/fontsize"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/m030020_t006"
+                android:layout_width="@dimen/p300"
+                android:layout_height="@dimen/p40"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:text="@string/m030020_t006"
+                android:textSize="@dimen/fontsize"
+                android:visibility="visible"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/m030020_b011"
+                android:layout_width="@dimen/p50"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/end"
+                android:text="@string/m030020_delete"
+                android:textSize="@dimen/fontsize"
+                tools:ignore="TextContrastCheck" />
+
+        </TableRow>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/m030020_b021"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/m030020_b020"
+        android:textSize="@dimen/fontsize" />
+
+    <TextView
+        android:id="@+id/m030040_myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/end"
+        android:gravity="end"
+        android:text="@string/myname_13"
+        android:textSize="@dimen/font21" />
+
+</LinearLayout>

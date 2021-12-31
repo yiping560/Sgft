@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <string name="m030020_t000">我的收藏</string>-->
+    <string name="m030020_t001">想去：</string>
+    <string name="m030020_t002">想跟：</string>
+    <string name="m030020_add">+</string>
+    <string name="m030020_delete">-</string>
+<!--    <string name="m030020_edit">編</string>-->
+    <string name="m030020_t003">收藏地點 1</string>
+    <string name="m030020_t004">收藏地點 2</string>
+    <string name="m030020_t005">收藏行程 1</string>
+    <string name="m030020_t006">收藏行程 2</string>
+
+    <string name="m030020_b020">確定</string>
+
+</resources>

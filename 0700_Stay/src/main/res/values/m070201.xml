@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m070201_b001">記錄點選記錄</string>
+    <string name="m070201_b002">取消點選記錄</string>
+    <string name="m070201_b003">回旅宿選單</string>
+    <string name="m070201_b004">回首頁</string>
+
+    
+    <string-array name="region_list">
+        <item>台中市</item>
+        <item>台北市</item>
+        <item>高雄市</item>
+        <item>台南市</item>
+        <item>新竹市</item>
+        <item>花蓮縣</item>
+        <item>台東縣</item>
+        <item>宜蘭縣</item>
+    </string-array>
+    <string name="region_selected">選擇的地區：</string>
+
+</resources>

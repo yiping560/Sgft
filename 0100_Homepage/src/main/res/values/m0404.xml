@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0404_t001">我的名字</string>
+    <string name="m0404_t002">我的gmail</string>
+    <string name="m0404_t003">我的暱稱</string>
+    <string name="m0404_t004">關於我</string>
+    <string name="m0404_t005">我的密碼</string>
+    <string name="m0404_t006">確認密碼</string>
+    <string name="m0404_b004">確認更改</string>
+</resources>

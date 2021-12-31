@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m0200_b001_AddFile">新增檔案</string>
+    <string name="m0200_t001">團隊管理</string>
+
+    <string name="m0200_edit_e001_hint">請輸入名稱</string>
+    <string name="m0200_edit_e001_error">請輸入名稱</string>
+    <string name="m0200_edit_apply_button">確定</string>
+    <string name="m0200_edit_cancel_button">取消</string>
+
+    <string name="m0200_select_item_menu_t001">清單</string>
+
+
+    <string name="m0201_team_manager_t002">發送給</string>
+    <string name="m0201_team_manager_b001">發送</string>
+    <string name="m0201_team_manager_emergency">緊急按鈕(長按傳送訊息及響警鈴)</string>
+
+    <string name="m0200_team_info">團隊資訊</string>
+    <string name="m0200_team_list">團隊管理</string>
+
+    <string name="m0200_menu_item01">編輯行程</string>
+    <string name="m0200_menu_item02">好友管理</string>
+    <string name="m0200_menu_item03">美食</string>
+    <string name="m0200_menu_item04">住宿</string>
+    <string name="m0200_menu_item05">景點</string>
+
+
+    <string-array name="m0201_select_mesage_to">
+        <item>所有團員</item>
+        <item>團長</item>
+        <item>悄悄話</item>
+    </string-array>
+
+    <string-array name="m0201_select_mesage_info">
+        <item>洗手間</item>
+        <item>抽菸</item>
+        <item>等我十分鐘</item>
+    </string-array>
+
+</resources>

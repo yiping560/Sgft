@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/m0201_layout_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:orientation="vertical"
+    android:padding="@dimen/m0200_pa0010"
+    tools:context=".M0201">
+
+    <TextView
+        android:id="@+id/m0201_team_manager_t001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="團名"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        app:srcCompat="@drawable/googlemap" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/m0201_team_manager_t002"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/m0201_team_manager_sp001"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:entries="@array/m0201_select_mesage_to"
+            android:gravity="center_horizontal|center_vertical" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/m0201_team_manager_sp002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:background="@android:drawable/btn_default"
+            android:entries="@array/m0201_select_mesage_info"
+            android:gravity="center_horizontal|center_vertical" />
+
+        <Button
+            android:id="@+id/m0201_team_manager_b001"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/m0201_team_manager_b001"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/m0201_team_manager_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/m0201_team_manager_emergency" />
+
+</LinearLayout>

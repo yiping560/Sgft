@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city_list">
+        <item>未選</item>
+        <item>01 基隆市</item>
+        <item>02 台北市</item>
+        <item>03 新北市</item>
+        <item>04 桃園縣</item>
+        <item>05 新竹市</item>
+        <item>06 新竹縣</item>
+        <item>07 苗栗縣</item>
+        <item>08 台中市</item>
+        <item>09 彰化縣</item>
+        <item>10 南投縣</item>
+        <item>11 雲林縣</item>
+        <item>12 嘉義市</item>
+        <item>13 嘉義縣</item>
+        <item>14 台南市</item>
+        <item>15 高雄市</item>
+        <item>16 屏東縣</item>
+        <item>17 台東縣</item>
+        <item>18 花蓮縣</item>
+        <item>19 宜蘭縣</item>
+        <item>20 澎湖縣</item>
+        <item>21 金門縣</item>
+        <item>22 連江縣</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Silver"
+    android:orientation="vertical"
+    android:padding="@dimen/Margins"
+    tools:context=".M030030">
+
+    <TextView
+        android:id="@+id/m030030_t000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/m030030_t000"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fontsize"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/m030030_e001"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/p50"
+        android:layout_marginTop="@dimen/Margins"
+        android:layout_marginBottom="@dimen/p20"
+        android:background="@color/White"
+        android:hint="@string/m030030_e001"
+        android:inputType="textAutoCorrect"
+        android:textSize="@dimen/fontsize" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/m030030_t001"
+            android:layout_width="@dimen/p270"
+            android:layout_height="@dimen/p70"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="@string/m030030_t001"
+            android:textSize="@dimen/fontsize"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/m030030_b001"
+            android:layout_width="@dimen/p50"
+            android:layout_height="@dimen/p50"
+            android:layout_marginStart="@dimen/end"
+            android:layout_marginTop="@dimen/Margins"
+            android:src="@drawable/love"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/m030030_t002"
+            android:layout_width="@dimen/p270"
+            android:layout_height="@dimen/p70"
+            android:layout_marginBottom="@dimen/Margins"
+            android:background="@android:color/holo_red_light"
+            android:gravity="center"
+            android:text="@string/m030030_t002"
+            android:textSize="@dimen/fontsize"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/m030030_b004"
+            android:layout_width="@dimen/p50"
+            android:layout_height="@dimen/p50"
+            android:layout_marginStart="@dimen/end"
+            android:layout_marginTop="@dimen/p10"
+            android:src="@drawable/love"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/m030040_myname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/p150"
+        android:gravity="end"
+        android:text="@string/myname_13"
+        android:textSize="@dimen/font21" />
+
+</LinearLayout>
