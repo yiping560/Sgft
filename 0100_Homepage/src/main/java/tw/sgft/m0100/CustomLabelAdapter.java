@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,6 +20,8 @@ public class CustomLabelAdapter extends RecyclerView.Adapter<CustomLabelAdapter.
           //檢查是否被選取用
           private boolean[] isChecked;
 
+          //
+
           public CustomLabelAdapter(List<String> data, int resID) {
                     this.data = data;
                     this.resID = resID;
@@ -29,7 +30,7 @@ public class CustomLabelAdapter extends RecyclerView.Adapter<CustomLabelAdapter.
 
           @NonNull
           @Override
-          public CustomLabelAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+          public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                     View view = LayoutInflater.from(parent.getContext())
                               .inflate(resID, parent, false);
                     ViewHolder holder = new ViewHolder(view);

@@ -49,6 +49,7 @@ public class M0500 extends AppCompatActivity implements
     private TextView t001;
     private String[] t001a,t001b,t001c;
     private ArrayList<Map<String,Object>> mList;
+    private String topname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,13 +106,14 @@ public class M0500 extends AppCompatActivity implements
             item.put("textView1", t001b[i]);
             item.put("textView2", t001c[i]);
             mList.add(item);
-            //------------------------------------------------
+            //----------------------------------------spinner1--------
             ArrayAdapter<CharSequence> spls = ArrayAdapter.createFromResource(
                     this,
                     R.array.county,
                     R.layout.spinner_item);
+
             s001.setAdapter(spls);
-            //---------------------------------------------------
+            //----------------------------------------spinner2-----------
             ArrayAdapter<CharSequence> spls2 = ArrayAdapter.createFromResource(
                     this,
                     R.array.area,
@@ -119,6 +121,8 @@ public class M0500 extends AppCompatActivity implements
             s002.setAdapter(spls2);
 
         }
+        s001.setOnItemSelectedListener(s001ON);
+
 
             SimpleAdapter adapter=new SimpleAdapter(
                     this,
@@ -134,6 +138,28 @@ public class M0500 extends AppCompatActivity implements
 
     }
 
+
+    AdapterView.OnItemSelectedListener s001ON=new AdapterView.OnItemSelectedListener() {
+                        @Override
+                        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                            if (position==0)
+                                return;
+
+
+                            topname=String.format("m%02d",position);
+                            int resId = getResources().getIdentifier(topname, "array", getPackageName());
+                            ArrayAdapter<CharSequence> spls2 = ArrayAdapter.createFromResource(
+                                    getApplicationContext(),
+                                    resId,
+                                    R.layout.spinner_item);
+                            s002.setAdapter(spls2);
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView<?> parent) {
+
+                        }
+                    };
     private void ChangePage(int resID) {
         findViewById(currentPage).setVisibility(View.INVISIBLE);
         findViewById(resID).setVisibility(View.VISIBLE);
@@ -193,7 +219,8 @@ public class M0500 extends AppCompatActivity implements
 //                    startActivity(intent);
                     break;
                 case R.id.m0500_item03:
-                    ChangePage(R.id.l3);
+                  intent.setClass(M0500.this, M0505_map.class);
+                  startActivity(intent);
                     break;
             }
             return true;

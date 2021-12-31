@@ -60,7 +60,7 @@ public class CustomAdapter extends BaseAdapter {
 
                     holder.title.setText(data.get(position).title);
                     holder.desc.setText(data.get(position).desc);
-                    holder.status.setText(data.get(position).status);
+//                    holder.status.setText(data.get(position).status);
                     Log.d("555", "001");
                     return view;
           }

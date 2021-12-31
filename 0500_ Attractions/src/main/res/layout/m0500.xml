@@ -13,7 +13,7 @@
         android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/deepblue"
+        android:background="@drawable/back15"
         android:orientation="vertical"
         android:visibility="visible">
 
@@ -44,10 +44,12 @@
                 android:layout_width="@dimen/p200"
                 android:layout_height="match_parent"
                 android:background="#00000000"
+                android:backgroundTint="@color/Aqua"
                 android:entries="@array/county"
-                android:spinnerMode="dialog"
 
+                android:spinnerMode="dialog"
                 android:textSize="@dimen/fontsize"
+                android:theme="@style/spinner_style"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <Spinner
@@ -57,6 +59,7 @@
                 android:entries="@array/area"
                 android:spinnerMode="dialog"
                 android:textSize="@dimen/fontsize"
+                android:theme="@style/spinner_style"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </TableRow>
@@ -64,8 +67,10 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/p20"
             android:layout_marginTop="@dimen/p30"
-            android:background="@drawable/box_green">
+            android:layout_marginEnd="@dimen/p10"
+            android:background="@drawable/box_orange">
 
             <Button
                 android:id="@+id/m0500_b002"
@@ -79,7 +84,8 @@
                 android:id="@+id/m0500_t005"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/box_grey"
+                android:layout_marginEnd="@dimen/p10"
+                android:background="@drawable/box_grey30"
                 android:gravity="center"
                 android:text="@string/m0500_t005"
                 android:textSize="@dimen/fontsize"
@@ -89,15 +95,16 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/p20"
             android:gravity="center">
 
             <Button
                 android:id="@+id/m0500_b001"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/p10"
-                android:background="@drawable/box_grey30"
+                android:background="@drawable/green"
                 android:text="@string/m0500_b001"
+                android:textColor="@color/White"
                 android:textSize="@dimen/fontsize" />
         </TableRow>
 
@@ -114,12 +121,12 @@
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/p30">
+                    android:layout_marginTop="@dimen/p10">
 
-                    <tw.sgft.m0500.CircleImgView
+                    <ImageView
                         android:id="@+id/m0500_v003"
-                        android:layout_width="@dimen/p80"
-                        android:layout_height="@dimen/p80"
+                        android:layout_width="@dimen/p150"
+                        android:layout_height="@dimen/p100"
                         android:background="#00000000"
                         app:srcCompat="@drawable/imag06" />
 
@@ -139,10 +146,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/p30">
 
-                    <tw.sgft.m0500.CircleImgView
+                    <ImageView
                         android:id="@+id/m0500_i002"
-                        android:layout_width="@dimen/p80"
-                        android:layout_height="@dimen/p80"
+                        android:layout_width="@dimen/p150"
+                        android:layout_height="@dimen/p100"
                         android:background="#00000000"
                         app:srcCompat="@drawable/imag01" />
 
@@ -164,12 +171,11 @@
                     android:background="#00000000"
                     android:orientation="vertical">
 
-                    <tw.sgft.m0500.CircleImgView
+                    <ImageView
                         android:id="@+id/m0500_v001"
-                        android:layout_width="@dimen/p80"
-                        android:layout_height="@dimen/p80"
+                        android:layout_width="@dimen/p150"
+                        android:layout_height="@dimen/p100"
                         android:background="#00000000"
-                        android:padding="@dimen/p05"
                         app:srcCompat="@drawable/photo03" />
 
                     <TextView

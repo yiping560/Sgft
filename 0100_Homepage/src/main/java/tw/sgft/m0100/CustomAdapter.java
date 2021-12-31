@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -60,7 +59,7 @@ public class CustomAdapter extends BaseAdapter {
 
                     holder.title.setText(data.get(position).title);
                     holder.desc.setText(data.get(position).desc);
-                    holder.status.setText(data.get(position).status);
+//                    holder.status.setText(data.get(position).status);
                     Log.d("555", "001");
                     return view;
           }

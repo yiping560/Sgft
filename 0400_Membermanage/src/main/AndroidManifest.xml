@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Sgft">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".M0400"
             android:exported="true">
@@ -18,7 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+<!--        <activity android:name=".M0402"></activity>-->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".M0402" />
+        <activity android:name="M0404" />
     </application>
 
 </manifest>

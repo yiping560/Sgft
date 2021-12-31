@@ -21,6 +21,8 @@ public class CustomLabelAdapter extends RecyclerView.Adapter<CustomLabelAdapter.
           //檢查是否被選取用
           private boolean[] isChecked;
 
+          //
+
           public CustomLabelAdapter(List<String> data, int resID) {
                     this.data = data;
                     this.resID = resID;

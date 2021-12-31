@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -52,10 +53,17 @@ public class M0200 extends AppCompatActivity {
           RelativeLayout mainlayout;
           //          private LinearLayout listpPage, editPage;
           private EditText e001;
+          private TextView t001, t002;
+
+          //資料宣告區
+          TestJourneyData tjData;
+
 
           //狀態機試寫
           //目前狀態(頁面)
           private int currentPageID;
+          //目前狀態試寫，編輯狀態
+          private int editState;
 
           @Override
           protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +98,9 @@ public class M0200 extends AppCompatActivity {
 
                     e001 = (EditText) findViewById(R.id.m0200_set002_e001);
 
+                    t001 = (TextView) findViewById(R.id.m0200_set002_t001);
+                    t002 = (TextView) findViewById(R.id.m0200_set002_t002);
+
                     b001 = findViewById(R.id.m0200_set001_b001);
 
                     apply = findViewById(R.id.m0200_set002_apply_button);
@@ -106,12 +117,12 @@ public class M0200 extends AppCompatActivity {
                     ilist_b001.setOnClickListener(buttonOn);
 
                     //載入data和adapter
-                    if (data != null) {
-                              adapter = new CustomAdapter(this, data.HappySet, R.layout.m0200_custom_listview_container);
-                              lv001.setAdapter(adapter);
-                              lv001.setOnItemClickListener(itemOn);
-                              lv001.setOnItemLongClickListener(itemLongOn);
-                    }
+
+                    adapter = new CustomAdapter(this, data.HappySet, R.layout.m0200_custom_listview_container);
+                    lv001.setAdapter(adapter);
+                    lv001.setOnItemClickListener(itemOn);
+                    lv001.setOnItemLongClickListener(itemLongOn);
+
 
                     targetdata = Arrays.asList(getResources().getStringArray(R.array.m0200_dummy_date));
                     matedata = Arrays.asList(getResources().getStringArray(R.array.m0200_dummy_userName));
@@ -119,21 +130,28 @@ public class M0200 extends AppCompatActivity {
                     mateitemadapter = new CustomLabelAdapter(matedata, R.layout.m0200_lite_label);
                     targetitemadapter = new CustomLabelAdapter(targetdata, R.layout.m0200_lite_label);
 
-                    showListAdapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item,showList);
+                    showListAdapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, showList);
 
           }
 
           private View.OnClickListener buttonOn = new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+
                               switch (v.getId()) {
                                         case R.id.m0200_set001_b001:
                                                   ChangePage(R.id.m0200_layout_edit);
                                                   Toast.makeText(getApplicationContext(), "444", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_set002_apply_button:
-                                                  if (e001.getText().toString().length() <= 0) {
-                                                            Toast.makeText(getApplicationContext(), "請輸入名稱", Toast.LENGTH_SHORT).show();
+                                                  if (e001.getText().toString().length() < 4) {
+                                                            Toast.makeText(getApplicationContext(), "名稱過短", Toast.LENGTH_SHORT).show();
+                                                            break;
+                                                  }
+
+                                                  if (t001.getText().toString().length() <= 0) {
+                                                            Toast.makeText(getApplicationContext(), "請選擇行程", Toast.LENGTH_SHORT).show();
                                                             break;
                                                   }
                                                   createNewData();
@@ -146,26 +164,33 @@ public class M0200 extends AppCompatActivity {
                                                   Toast.makeText(getApplicationContext(), "什麼都不做回主介面", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_set002_select_b001:
+                                                  editState = 1;
                                                   itemlistview.setAdapter(targetitemadapter);
+                                                  itemlistview.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
                                                   ChangePage(R.id.m0200_layout_item_listview);
                                                   Toast.makeText(getApplicationContext(), "選擇行程", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_set002_select_b002:
+                                                  editState = 2;
                                                   itemlistview.setAdapter(mateitemadapter);
                                                   itemlistview.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
                                                   ChangePage(R.id.m0200_layout_item_listview);
                                                   Toast.makeText(getApplicationContext(), "選擇好友", Toast.LENGTH_SHORT).show();
                                                   break;
                                         case R.id.m0200_item_list_b001:
-                                                  for (int i = 0; i < mateitemadapter.getItemCount(); i++) {
-                                                            String str = mateitemadapter.getItem(i);
-                                                            //List<>().contains(object o)回傳一個boolean，如果List內包含該物件
-                                                            if (mateitemadapter.getItemChecked(i) && !showList.contains(str)) {
-                                                                      showList.add(str);
-                                                            }
+                                                  switch (editState) {
+                                                            case 1:
+                                                                      getTestJourneyData();
+                                                                      break;
+                                                            case 2:
+                                                                      getTeamMate();
+                                                                      break;
+                                                            default:
+                                                                      break;
                                                   }
-                                                  showListView.setAdapter(showListAdapter);
+
                                                   ChangePage(R.id.m0200_layout_edit);
+                                                  editState = 0;
                                                   break;
                               }
 
@@ -174,12 +199,50 @@ public class M0200 extends AppCompatActivity {
           };
 
           private void createNewData() {
-                    String str1, str2, str3;
-                    str1 = e001.getText().toString();
-//                    str2 =
 
-                    TestTeamData ttData = new TestTeamData(str1, "假裝去旅遊", "準備中");
+                    TestTeamData ttData = new TestTeamData(tjData);
+                    ttData.title = e001.getText().toString();
                     data.HappySet.add(ttData);
+          }
+
+          private void createNewData(TestJourneyData target, List<TestTeammateData> mates) {
+//            String str1;
+//            str1 = e001.getText().toString();
+//
+//            TestTeamData ttData = new TestTeamData(str1, "假裝去旅遊");
+//            data.HappySet.add(ttData);
+          }
+
+          private void editData() {
+
+          }
+
+          private void getTestJourneyData() {
+                    String str = "";
+                    for (int i = 0; i < targetdata.size(); i++) {
+                              if (targetitemadapter.getItemChecked(i))
+                                        str = targetitemadapter.getItem(i);
+                    }
+
+                    tjData = new TestJourneyData();
+                    tjData.title = str;
+                    t001.setText(str);
+          }
+
+          private void getTeamMate() {
+                    for (int i = 0; i < mateitemadapter.getItemCount(); i++) {
+                              String str = mateitemadapter.getItem(i);
+                              //List<>().contains(object o)回傳一個boolean，如果List內包含該物件
+                              if (mateitemadapter.getItemChecked(i) && !showList.contains(str)) {
+                                        showList.add(str);
+                              }
+
+                              if (!mateitemadapter.getItemChecked(i) && showList.contains(str)) {
+                                        showList.remove(str);
+                              }
+                    }
+                    showListView.setAdapter(showListAdapter);
+
           }
 
           private AdapterView.OnItemClickListener itemOn = new AdapterView.OnItemClickListener() {
@@ -228,8 +291,8 @@ public class M0200 extends AppCompatActivity {
 
           @Override
           protected void onDestroy() {
-                    super.onDestroy();
-                    System.exit(0);
+//                    super.onDestroy();
+                   // System.exit(0);
           }
 
           private NavigationBarView.OnItemSelectedListener bottomOn = new NavigationBarView.OnItemSelectedListener() {
@@ -259,4 +322,6 @@ public class M0200 extends AppCompatActivity {
 
                     currentPageID = pageID;
           }
+
+
 }

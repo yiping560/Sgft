@@ -12,11 +12,12 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/0100_Homepage" />
             <option value="$PROJECT_DIR$/0200_TeamManager" />
-            <option value="$PROJECT_DIR$/0300_Journeymanage" />
+            <option value="$PROJECT_DIR$/0300_Journeymanage_1229" />
             <option value="$PROJECT_DIR$/0400_Membermanage" />
             <option value="$PROJECT_DIR$/0500_ Attractions" />
             <option value="$PROJECT_DIR$/0600_Delicacy" />
-            <option value="$PROJECT_DIR$/0700_ Stay" />
+            <option value="$PROJECT_DIR$/0700_Stay" />
+            <option value="$PROJECT_DIR$/0900_Map" />
             <option value="$PROJECT_DIR$/mysqltest" />
           </set>
         </option>

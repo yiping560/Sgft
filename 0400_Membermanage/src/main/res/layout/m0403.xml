@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
-        android:id="@+id/m0403"
+        android:id="@+id/l2"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="match_parent"
         android:background="@color/Silver"
         android:orientation="vertical"
         android:visibility="visible">
@@ -26,17 +26,6 @@
             android:textStyle="bold"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <Button
-            android:id="@+id/m0403_b001"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0403_t003"
-            android:layout_alignEnd="@+id/m0403_t003"
-            android:layout_marginTop="@dimen/Spacing"
-            android:text="@string/m0403_b001"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
         <ScrollView
             android:layout_width="388dp"
             android:layout_height="404dp"
@@ -52,7 +41,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/m0403_t004"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -99,17 +88,6 @@
             </LinearLayout>
         </ScrollView>
 
-        <Button
-            android:id="@+id/m0403_b002"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="9dp"
-            android:text="@string/m0403_b002"
-            android:textColor="@color/Blue"
-            android:textSize="@dimen/fontsize"
-            android:textStyle="bold" />
     </LinearLayout>
+
 </RelativeLayout>

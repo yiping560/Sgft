@@ -13,5 +13,12 @@
         <item name="android:background">#0000FF</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="spinner_style" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:background">@drawable/spinner02</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
 
 </resources>

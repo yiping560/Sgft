@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tw.sgft.m0100">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +16,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".M01_map"
+            android:exported="false"
+            android:label="@string/title_activity_m01_map" />
         <activity
             android:name=".M0100"
             android:exported="true">
@@ -18,28 +42,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".M0600" />
+        <activity android:name=".M0200" />
+        <activity android:name=".M0400" />
+        <activity android:name=".M0300" />
+        <activity android:name=".M030010" />
+        <activity android:name=".M030011" />
+        <activity android:name=".M030012" />
+        <activity android:name=".M030020" />
+        <activity android:name=".M030030" />
+        <activity android:name=".M030040" />
+        <activity android:name=".M0500" />
+        <activity android:name=".M0501" />
+        <activity android:name=".M0502" />
+        <activity android:name=".M0504" />
+        <activity android:name=".M0505_map" />
+        <activity android:name=".M0600_Map"></activity>
 
-        <activity android:name=".M0700"></activity>
-        <activity android:name=".M0701"></activity>
-        <activity android:name=".M0702"></activity>
-        <activity android:name=".M0500"></activity>
-        <activity android:name=".M0501"></activity>
-        <activity android:name=".M0502"></activity>
-        <activity android:name=".M050301"></activity>
-        <activity android:name=".M0504"></activity>
-        <activity android:name=".M0600"></activity>
-        <activity android:name=".M0601"></activity>
-        <activity android:name=".M0602"></activity>
-        <activity android:name=".M0200"></activity>
-        <activity android:name=".M0400"></activity>
-        <activity android:name=".M0300"></activity>
-        <activity android:name=".M030010"></activity>
-        <activity android:name=".M030011"></activity>
-        <activity android:name=".M030012"></activity>
-        <activity android:name=".M030020"></activity>
-        <activity android:name=".M030030"></activity>
-        <activity android:name=".M030040"></activity>
-
+        <activity android:name=".M050301" />
     </application>
 
 </manifest>

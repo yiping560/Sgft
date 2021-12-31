@@ -4,7 +4,12 @@
 
 
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="999"
-        android:title="@string/action_settings" />
+        android:id="@+id/m0600_item01"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:orderInCategory="200"
+        android:title="@string/m0600_item01" />
+    <item
+        android:id="@+id/item02"
+        android:icon="@android:drawable/ic_menu_mapmode"
+        android:title="地圖" />
 </menu>

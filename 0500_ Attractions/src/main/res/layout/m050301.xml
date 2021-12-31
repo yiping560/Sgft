@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back04"
+    android:background="@drawable/back14"
     android:orientation="vertical"
     android:padding="@dimen/p10">
 
@@ -19,6 +19,7 @@
             android:background="@drawable/green"
             android:gravity="center"
             android:text="@string/m050301_t001"
+            android:textColor="@color/Yellow"
             android:textSize="@dimen/fontsize" />
     </TableRow>
 
@@ -98,7 +99,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/p150"
+        android:layout_marginTop="@dimen/p250"
         android:background="#00000000">
 
         <Button

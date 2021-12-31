@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="county">
+        <item>請選擇地區:</item>
         <item>基隆市</item>
         <item>台北市</item>
+        <item>新北市</item>
         <item>桃園市</item>
         <item>新竹縣</item>
         <item>新竹市</item>
@@ -20,12 +22,170 @@
         <item>花蓮縣</item>
         <item>台東縣</item>
     </string-array>
+
     <string-array name="area">
+        <item>請選擇地區:</item>
         <item>北區</item>
         <item>中區</item>
         <item>南區</item>
         <item>西區</item>
     </string-array>
+
+    <string-array name="m01">
+        <item>請選擇地區</item>
+        <item>中山區</item>
+        <item>中正區</item>
+        <item>信義區</item>
+        <item>仁愛區</item>
+        <item>暖暖區</item>
+        <item>安樂區</item>
+        <item>七堵區</item>
+    </string-array>
+
+    <string-array name="m02">
+        <item>請選擇地區</item>
+        <item>松山區</item>
+        <item>信義區</item>
+        <item>大安區</item>
+        <item>中山區</item>
+        <item>中正區</item>
+        <item>大同區</item>
+        <item>萬華區</item>
+        <item>文山區</item>
+        <item>南港區</item>
+        <item>內湖區</item>
+        <item>士林區</item>
+        <item>北投區</item>
+    </string-array>
+    <string-array name="m03">
+        <item>請選擇地區</item>
+        <item>板橋區</item>
+        <item>三重區</item>
+        <item>中和區</item>
+        <item>永和區</item>
+        <item>新莊區</item>
+        <item>新店區</item>
+        <item>土城區</item>
+        <item>蘆洲區</item>
+        <item>汐止區</item>
+        <item>樹林區</item>
+        <item>淡水區</item>
+        <item>鶯歌區</item>
+        <item>三峽區</item>
+        <item>瑞芳區</item>
+        <item>五股區</item>
+        <item>泰山區</item>
+        <item>林口區</item>
+        <item>深坑區</item>
+        <item>石碇區</item>
+        <item>坪林區</item>
+        <item>三芝區</item>
+        <item>石門區</item>
+        <item>八里區</item>
+        <item>平溪區</item>
+        <item>雙溪區</item>
+        <item>貢寮區</item>
+        <item>金山區</item>
+        <item>萬里區</item>
+        <item>烏來區</item>
+    </string-array>
+
+    <string-array name="m04">
+        <item>請選擇地區</item>
+        <item>中壢區</item>
+        <item>大溪區</item>
+        <item>楊梅區</item>
+        <item>蘆竹區</item>
+        <item>大園區</item>
+        <item>龜山區</item>
+        <item>八德區</item>
+        <item>龍潭區</item>
+        <item>平鎮區</item>
+        <item>新屋區</item>
+        <item>觀音區</item>
+    </string-array>
+
+    <string-array name="m05">
+        <item>請選擇地區</item>
+        <item>竹東鎮</item>
+        <item>新埔鎮</item>
+        <item>關西鎮</item>
+        <item>新豐鄉</item>
+        <item>峨眉鄉</item>
+        <item>寶山鄉</item>
+        <item>五峰鄉</item>
+        <item>橫山鄉</item>
+        <item>北埔鄉</item>
+        <item>尖石鄉</item>
+        <item>芎林鄉</item>
+        <item>湖口鄉</item>
+    </string-array>
+
+    <string-array name="m06">
+        <item>請選擇地區</item>
+        <item>東區</item>
+        <item>北區</item>
+        <item>香山區</item>
+    </string-array>
+    <string-array name="m07">
+        <item>請選擇地區</item>
+        <item>苗栗市</item>
+        <item>頭份市</item>
+        <item>竹南鎮</item>
+        <item>後龍鎮</item>
+        <item>通霄鎮</item>
+        <item>苑裡鎮</item>
+        <item>卓蘭鎮</item>
+        <item>造橋鄉</item>
+        <item>西湖鄉</item>
+        <item>頭屋鄉</item>
+        <item>公館鄉</item>
+        <item>銅鑼鄉</item>
+        <item>三義鄉</item>
+        <item>大湖鄉</item>
+        <item>獅潭鄉</item>
+        <item>三灣鄉</item>
+        <item>南庄鄉</item>
+        <item>泰安鄉</item>
+
+    </string-array>
+
+
+
+    <string-array name="m08">
+        <item>請選擇地區</item>
+        <item>中區</item>
+        <item>東區</item>
+        <item>南區</item>
+        <item>西區</item>
+        <item>北區</item>
+        <item>西屯區</item>
+        <item>南屯區</item>
+        <item>北屯區</item>
+        <item>豐原區</item>
+        <item>東勢區</item>
+        <item>大甲區</item>
+        <item>清水區</item>
+        <item>沙鹿區</item>
+        <item>梧棲區</item>
+        <item>后里區</item>
+        <item>神岡區 </item>
+        <item>潭子區 </item>
+        <item>大雅區 </item>
+        <item>新社區 </item>
+        <item>石岡區 </item>
+        <item>外埔區 </item>
+        <item>大安區 </item>
+        <item>烏日區 </item>
+        <item>大肚區 </item>
+        <item>龍井區</item>
+        <item>霧峰區 </item>
+        <item>太平區 </item>
+        <item>大里區</item>
+    </string-array>
+
+
+
 
 
 

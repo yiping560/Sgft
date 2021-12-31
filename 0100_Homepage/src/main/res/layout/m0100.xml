@@ -18,101 +18,108 @@
         android:visibility="visible"
         tools:context=".M0100">
 
-        <Button
-            android:id="@+id/m0100_b001"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="@dimen/p20"
-            android:layout_marginTop="@dimen/p20"
-            android:layout_marginEnd="@dimen/p10"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b001"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/m0100_b002"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0100_b003"
-            android:layout_alignEnd="@+id/m0100_b003"
-            android:layout_marginStart="@dimen/p10"
-            android:layout_marginTop="23dp"
-            android:layout_marginEnd="-1dp"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b002"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/m0100_b003"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0100_b001"
-            android:layout_alignEnd="@+id/m0100_b001"
-            android:layout_marginStart="@dimen/p10"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="-2dp"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b003"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/m0100_b004"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0100_b002"
-            android:layout_alignEnd="@+id/m0100_b002"
-            android:layout_marginStart="@dimen/p10"
-            android:layout_marginTop="@dimen/p20"
-            android:layout_marginEnd="-2dp"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b004"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
-
-        <Button
-            android:id="@+id/m0100_b005"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0100_b004"
-            android:layout_alignEnd="@+id/m0100_b004"
-            android:layout_marginStart="@dimen/p10"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="-3dp"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b005"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
-
-        <Button
-            android:id="@+id/m0100_b006"
-            android:layout_width="@dimen/p350"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m0100_b005"
-            android:layout_alignEnd="@+id/m0100_b005"
-            android:layout_marginStart="@dimen/p10"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="-2dp"
-            android:background="@android:drawable/btn_default"
-            android:text="@string/m0100_b006"
-            android:textColor="@color/Red"
-            android:textSize="@dimen/fontsize" />
-
         <TextView
             android:id="@+id/m0100_t001"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/m0100_t001"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/fontsize" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m0100_t001"
+            android:layout_alignStart="@+id/m0100_t001"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/Margins"
+            android:layout_marginEnd="@dimen/Margins"
+            android:background="@color/Silver"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="@string/m0100_m001"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/font20"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTextMultiLine"
+            android:layout_alignStart="@+id/editTextTextMultiLine"
+            android:layout_alignEnd="@+id/editTextTextMultiLine"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/Margins"
+            android:layout_marginEnd="0dp"
+            android:background="@color/Silver"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text="@string/m0100_m002"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/font20"
+            android:visibility="visible"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/m0100_t002"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m0100_t001"
+            android:layout_alignStart="@+id/m0100_t001"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/Margins"
+            android:background="@color/Silver"
+            android:text="@string/m0100_t002"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/fontsize"
+            android:visibility="gone"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/m0100_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m0100_t002"
+            android:layout_alignStart="@+id/m0100_t002"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/Silver"
+            android:text="@string/m0100_descr"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/fontsize"
+            android:visibility="gone"
+            tools:ignore="TextContrastCheck" />
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/m0100_descr"
+            android:layout_alignStart="@+id/m0100_descr"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/Margins"
+            android:layout_weight="0"
+            android:drawSelectorOnTop="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/m0100_myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="132dp"
+            android:layout_marginEnd="@dimen/Margins"
+            android:layout_marginBottom="@dimen/p100"
             android:text="@string/myname07"
             android:textColor="@color/Yellow"
             android:textSize="@dimen/fontsize" />

@@ -35,6 +35,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
@@ -60,6 +63,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/fontsize"
+            android:textStyle="bold"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 

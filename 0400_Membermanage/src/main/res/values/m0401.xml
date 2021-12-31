@@ -7,4 +7,6 @@
     <string name="m0401_t005">使用者性別:</string>
     <string name="m0401_t002">使用者姓名:</string>
     <string name="m0401_b001">註冊</string>
+    <string name="m0401_e001">小名</string>
+    <string name="m0401_e002">text@text</string>
 </resources>

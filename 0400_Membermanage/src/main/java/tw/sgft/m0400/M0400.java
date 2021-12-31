@@ -3,6 +3,7 @@ package tw.sgft.m0400;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
@@ -12,9 +13,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -23,7 +26,7 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-public class M0400 extends AppCompatActivity {
+public class M0400 extends AppCompatActivity implements Animation.AnimationListener{
 
     private Button b001;
     private Button b002;
@@ -41,6 +44,10 @@ public class M0400 extends AppCompatActivity {
     private BottomNavigationView bottomBar;
     private MediaPlayer startmusic;
     private RelativeLayout r_layout;
+    private RelativeLayout l3;
+    private Button b005;
+    private Button sb002;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,44 +61,40 @@ public class M0400 extends AppCompatActivity {
 
     private void setupViewcomponent() {
 //        b001 =(Button)findViewById(R.id.m0400_b001);
-        currentPage = R.id.m0403;
-//        ChangePage(R.id.l1);
+        currentPage = R.id.l2;
+        ChangePage(R.id.l1);
+//        currentPage = R.id.l3;
         b002 =(Button)findViewById(R.id.m0400_b002);
         e001 =(EditText)findViewById(R.id.m0400_e001);
         e002 =(EditText)findViewById(R.id.m0400_e002);
         mTxtResult = (TextView) findViewById(R.id.m0400_ans);
-        img = (ImageView) findViewById(R.id.m0400_b004);
+        img = (ImageButton) findViewById(R.id.m0400_b004);
 
-
+        sb002 =(Button)findViewById(R.id.m0403_b002);
         l1 = (LinearLayout)findViewById(R.id.l1);
-        l2 = (LinearLayout)findViewById(R.id.m0403);
-
+        l2 = (LinearLayout)findViewById(R.id.l2);
+        l3 = (RelativeLayout)findViewById(R.id.l3);
         b003 =(Button)findViewById(R.id.aleart_b001);
-        b004 =(Button)findViewById(R.id.aleart_b002);
-//        b001.setOnClickListener(b001On);
+//        b004 =(Button)findViewById(R.id.aleart_b002);
+        sb002.setOnClickListener(b001On);
         b002.setOnClickListener(b002On);
+//        b004.setOnClickListener(b003On);
 //        img.setOnClickListener(b003On);
  //顯示對話框
         AlertDialog.Builder builder = new AlertDialog.Builder(M0400.this);
-//
-//        Intent intent = this.getIntent();
-//        String mode_title = intent.getStringExtra("class_title");
-//        this.setTitle(mode_title);
+        img.setOnClickListener(imgOn);
         bottomBar = findViewById(R.id.bottom_menu); //底部按鈕
         bottomBar.setOnItemSelectedListener(bottomOn);
-        startmusic = MediaPlayer.create(getApplication(),R.raw.abc);
+        startmusic=MediaPlayer.create(getApplication(),R.raw.abc);
         startmusic.start();
 
         r_layout = (RelativeLayout) findViewById(R.id.m0400_b003);
-        r_layout.setBackgroundResource(R.drawable.back03);
         r_layout.setAnimation(AnimationUtils.loadAnimation(this,R.anim.anim_trans_bounce));
-        r_layout.setBackgroundResource(R.drawable.back03);
     }
 
-    private void ChangePage(int resId) {
+    private void ChangePage(int resID) {
         findViewById(currentPage).setVisibility(View.INVISIBLE);
         findViewById(resID).setVisibility(View.VISIBLE);
-
         currentPage=resID;
     }
 
@@ -105,18 +108,64 @@ public class M0400 extends AppCompatActivity {
 
                     break;
                 case R.id.item02:
-//                    ChangePage(R.id.m0403);
+                    ChangePage(R.id.l2);
 //                layout_show(2);
 //                l01.setVisibility(View.INVISIBLE);
 //                l02.setVisibility(View.VISIBLE);
                     break;
                 case R.id.item03:
 //                layout_show(3);
-                    break;
+                    ChangePage(R.id.l3);
             }
+//            startActivity(intent);
             return true;
         }
     };
+    private View.OnClickListener b001On =new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.m0403_b002:
+                    intent.putExtra("class_title",getString(R.string.m0403_b002));
+                    intent.setClass(M0400.this,MainActivity.class);
+            }
+        startActivity(intent);
+        }
+    };
+
+
+    private View.OnClickListener imgOn=new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            switch (view.getId()){
+//                case R.id.m0500_b001:
+//                    intent.putExtra("class_title",getString(R.string.m0000_b0501));
+//                    intent.setClass(M0500.this,M0501.class);
+
+                case R.id.m0400_b004:
+                    intent.putExtra("class_title",getString(R.string.m0400_b004));
+                    intent.setClass(M0400.this,M0402.class);
+            }
+
+            startActivity(intent);
+        }
+    };
+//    private View.OnClickListener b003On=new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//            switch (view.getId()){
+////                case R.id.m0500_b001:
+////                    intent.putExtra("class_title",getString(R.string.m0000_b0501));
+////                    intent.setClass(M0500.this,M0501.class);
+//
+//                case R.id.aleart_b002:
+//                    intent.putExtra("class_title",getString(R.string.aleart_b002));
+//                    intent.setClass(M0400.this,M0402.class);
+//            }
+//
+//            startActivity(intent);
+//        }
+//    };
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 //        return super.onCreateOptionsMenu(menu);
@@ -129,18 +178,6 @@ public class M0400 extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()) {
 
-//            case R.id.m0500_item01:
-//
-////                l1.setVisibility(View.VISIBLE);
-////                l2.setVisibility(View.INVISIBLE);
-//
-//                break;
-//            case R.id.m0500_item02:
-//                l1.setVisibility(View.INVISIBLE);
-//                l2.setVisibility(View.VISIBLE);
-//                intent.setClass(M0500.this,M0501.class);
-//                startActivity(intent);
-//                break;
             case R.id.m0500_finish:
                 this.finish();
                 break;
@@ -152,27 +189,15 @@ public class M0400 extends AppCompatActivity {
 
     }
 
-//    private View.OnClickListener b003On =new View.OnClickListener() {
-//        @Override
-//        public void onClick(View view) {
-//            switch (view.getId()){
-//                case R.id.m0400_b004:
-//                    intent.putExtra("class_title",getString(R.string.m0400_b004));
-//                    intent.setClass(M0400.this,M0402.class);
-//                    break;
-//            }
-//            startActivity(intent);
-//
-//        }
-//    };
+
     @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "進用返回建", Toast.LENGTH_LONG).show();
 //        super.onBackPressed();
     }
-
-//    private Intent intent =new Intent();
     private Dialog dialog;
+//    private Intent intent =new Intent();
+
 //    private View.OnClickListener b001On =new View.OnClickListener() {
 //        @Override
 //        public void onClick(View v) {
@@ -188,9 +213,9 @@ public class M0400 extends AppCompatActivity {
 //            }
 //            startActivity(intent);
 //        }
-////        public void cancel(View v){
-////            Dialog dialog = null;
-////            dialog.cancel();
+//        public void cancel(View v){
+//            Dialog dialog = null;
+//            dialog.cancel();
 ////        }
 ////        public void login(View v){
 ////            Toast.makeText(getApplicationContext(), getText(R.string.m0400_t001), Toast.LENGTH_LONG).show();
@@ -201,6 +226,7 @@ public class M0400 extends AppCompatActivity {
     private Dialog mLoginDlg;
     private Intent intent =new Intent();
     private View.OnClickListener b002On =new View.OnClickListener() {
+
         @Override
         public void onClick(View view) {
             mTxtResult.setText("");
@@ -214,7 +240,8 @@ public class M0400 extends AppCompatActivity {
             mLoginDlg.show();
         }
         private Button.OnClickListener loginDlgBtnOKOnClkLis = new Button.OnClickListener() {
-            @SuppressLint("SetTextI18n")
+//            @SuppressLint("SetTextI18n")
+            @SuppressLint({"SetTextI18n"})
             public void onClick(View v) {
                 switch (v.getId()){
                     case R.id.m0400_b002:
@@ -226,94 +253,43 @@ public class M0400 extends AppCompatActivity {
                                 getString(R.string.m0400_e002) +
                                 edtPassword.getText().toString());
                         Toast.makeText(getApplicationContext(), getText(R.string.m0400_t001), Toast.LENGTH_LONG).show();
-//                        intent.putExtra("class_title",getString(R.string.m0400_b002));
-//                        intent.setClass(M0400.this,M0402.class);
+                        intent.putExtra("class_title",getString(R.string.aleart_b002));
+                        intent.setClass(M0400.this,M0402.class);
                         break;
                 }
-
- //
-
                 mLoginDlg.cancel();
-
+                startActivity(intent);
             }
         };
         private Button.OnClickListener loginDlgBtnCancelOnClkLis = new Button.OnClickListener() {
             public void onClick(View v) {
-
-                //                mTxtResult.setText(getString(R.string.) + getString(R.string.m0905_btnCancel));
+                mTxtResult.setText(getString(R.string.m0400_ans) + getString(R.string.aleart1_b001));
                 mLoginDlg.cancel();
             }
         };
     };
 
-//    public LinearLayout getL01() {
-//        return l01;
-//    }
-//
-//    public void setL01(LinearLayout l01) {
-//        this.l01 = l01;
-//    }
-//
-//    public LinearLayout getL02() {
-//        return l02;
-//    }
-//
-//    public EditText getE002() {
-//        return e002;
-//    }
-//
-//    public void setE002(EditText e002) {
-//        this.e002 = e002;
-//    }
-//
-//    public EditText getE001() {
-//        return e001;
-//    }
-//
-//    public void setE001(EditText e001) {
-//        this.e001 = e001;
-//    }
-//
-//    public ImageView getImg() {
-//        return img;
-//    }
-//
-//    public void setImg(ImageView img) {
-//        this.img = img;
-//    }
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.bottom, menu);
-//        return true;
-//    }
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//
-//        int id = item.getItemId();
-//        switch (item.getItemId()) {
-//            case R.id.item01:
-//
-//                ss = 1;
-//                break;
-//            case R.id.item02:
-//                ss = 2;
-//                break;
-//
-//            case R.id.item03:
-//
-//                ss = 3;
-//                super.onBackPressed();
-//                break;
-//
-//            case R.id.item04:
-//                ss = 4;
-//                break;
-////            case R.id.item05:
-////                ss = 5;
-////                break;
-//        }
-//
-//        return super.onOptionsItemSelected(item);
-//    }
+
+
+
+    @Override
+    public void onAnimationStart(Animation animation) {
+        l1.setVisibility(View.VISIBLE);
+
+        if (startmusic.isPlaying()) {
+            startmusic.stop();
+        };
+    }
+
+    @Override
+    public void onAnimationEnd(Animation animation) {
+
+    }
+
+    @Override
+    public void onAnimationRepeat(Animation animation) {
+
+    }
 
 
     }

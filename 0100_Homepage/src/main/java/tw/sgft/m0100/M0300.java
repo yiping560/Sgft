@@ -23,9 +23,6 @@ public class M0300 extends AppCompatActivity {
     }
 
     private void setupViewComponent() {
-        Intent intent = this.getIntent();
-        String mode_title = intent.getStringExtra("class_title");
-        this.setTitle(mode_title);
         b001 = (Button)findViewById(R.id.m0300_b001);
         b002 = (Button)findViewById(R.id.m0300_b002);
         b003 = (Button)findViewById(R.id.m0300_b003);

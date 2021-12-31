@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="0.33"
-                    android:text="(這裡是行程)"
+                    android:hint="(這裡是行程)"
                     android:textColor="@color/Black"
                     android:textSize="@dimen/fontsize"
                     android:textStyle="bold" />
@@ -133,7 +133,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="0.33"
-                    android:text="(這裡是邀請好友)"
+                    android:hint="(這裡是邀請好友)"
                     android:textColor="@color/Black"
                     android:textSize="@dimen/fontsize"
                     android:textStyle="bold" />

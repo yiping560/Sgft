@@ -31,7 +31,8 @@
             android:id="@+id/m0200_custom_listview_container_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/m0200_custom_listview_container_description"

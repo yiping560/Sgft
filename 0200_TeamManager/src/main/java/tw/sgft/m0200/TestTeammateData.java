@@ -1,4 +1,8 @@
 package tw.sgft.m0200;
 
-public class TestTeammateData {
+import java.io.Serializable;
+
+public class TestTeammateData implements Serializable {
+      public String name;
+
 }

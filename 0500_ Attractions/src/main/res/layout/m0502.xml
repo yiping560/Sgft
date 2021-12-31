@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back03"
+    android:layout_weight="1"
+    android:background="@drawable/back11"
     android:orientation="vertical"
     android:padding="@dimen/p10"
     tools:context=".M0502">
@@ -24,160 +25,244 @@
         android:id="@+id/m0502_im001"
         android:layout_width="match_parent"
         android:layout_height="@dimen/p150"
-        android:layout_marginTop="@dimen/p20"
+        android:layout_marginTop="@dimen/p10"
         app:srcCompat="@drawable/imag01" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/p200"
-        android:layout_marginTop="@dimen/p10">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/m0502_t003"
-                android:layout_width="match_parent"
+                android:id="@+id/m0502_t002"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/p10"
                 android:text="@string/m0502_t003"
-                android:textSize="@dimen/fontsize"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/m0502_t004"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/p10"
-                android:text="@string/m0502_t004"
-                android:textSize="@dimen/fontsize"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/m0502_t005"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/p10"
-                android:text="@string/m0502_t005"
+                android:textColor="@color/Lime"
                 android:textSize="@dimen/fontsize"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/m0502_t006"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/p20"
+                android:text="@string/m0502_t013"
+                android:textColor="@color/White"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/m0502_t003"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/p10"
-                android:text="@string/m0502_t006"
+                android:text="@string/m0502_t004"
+                android:textColor="@color/Lime"
                 android:textSize="@dimen/fontsize"
                 android:textStyle="bold" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/m0502_t007"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/p20"
+                android:text="@string/m0502_t014"
+                android:textColor="@color/White"
+                android:textSize="@dimen/font21"
+                android:textStyle="bold" />
+        </TableRow>
 
-                <TextView
-                    android:id="@+id/m0502_t007"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/p10"
-                    android:text="@string/m0502_t007"
-                    android:textSize="@dimen/fontsize"
-                    android:textStyle="bold" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/m0502_b002"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/p100"
-                    android:layout_marginBottom="@dimen/p05"
-                    android:background="@drawable/box_grey30"
-                    android:text="@string/m0502_b002"
-                    android:textSize="@dimen/fontsize16" />
-            </TableRow>
+            <TextView
+                android:id="@+id/m0502_t004"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/p10"
+                android:text="@string/m0502_t005"
+                android:textColor="@color/Lime"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/m0502_t008"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="@dimen/p10"
-                android:text="@string/m0502_t008"
+                android:layout_marginStart="@dimen/p20"
+                android:text="@string/m0502_t015"
+                android:textColor="@color/White"
                 android:textSize="@dimen/fontsize"
                 android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/m0502_t005"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/p10"
+                android:text="@string/m0502_t006"
+                android:textColor="@color/Lime"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/m0502_t009"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/p20"
+                android:text="@string/m0502_t016"
+                android:textColor="@color/White"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/Margins">
+
+            <Button
+                android:id="@+id/m0502_b002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/p100"
+                android:layout_marginBottom="@dimen/p05"
+                android:background="@drawable/orange"
+                android:text="@string/m0502_b002"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/fontsize16" />
+
+            <Button
+                android:id="@+id/m0502_b001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/p50"
+                android:layout_marginBottom="@dimen/p10"
+                android:background="@drawable/orange"
+                android:text="@string/m0502_b001"
+                android:textColor="@color/Blue"
+                android:textSize="@dimen/fontsize16" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/p40"
+                android:background="@drawable/green"
+                android:gravity="center"
+                android:text="@string/m0500_b001"
+                android:textColor="@color/White"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/p10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/m0502_v001"
+                    android:layout_width="@dimen/p150"
+                    android:layout_height="@dimen/p100"
+                    app:srcCompat="@drawable/photo03" />
+
                 <TextView
-                    android:id="@+id/m0502_t009"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/m0502_t010"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="@dimen/p10"
-                    android:text="@string/m0502_t009"
+                    android:layout_marginTop="@dimen/p30"
+                    android:gravity="center"
+                    android:text="@string/m0502_t010"
+                    android:textColor="@color/White"
                     android:textSize="@dimen/fontsize"
                     android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/m0502_b001"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/p50"
-                    android:layout_marginBottom="@dimen/p10"
-                    android:background="@drawable/box_grey30"
-                    android:text="@string/m0502_b001"
-                    android:textSize="@dimen/fontsize16" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/Margins">
+
+                <ImageView
+                    android:id="@+id/m0502_v002"
+                    android:layout_width="@dimen/p150"
+                    android:layout_height="@dimen/p100"
+                    app:srcCompat="@drawable/imag06" />
+
+                <TextView
+                    android:id="@+id/m0502_t011"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/p30"
+                    android:gravity="center"
+                    android:text="@string/m0502_t011"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/p10">
+
+                <ImageView
+                    android:id="@+id/m0502_v003"
+                    android:layout_width="@dimen/p150"
+                    android:layout_height="@dimen/p100"
+                    app:srcCompat="@drawable/imag07" />
+
+                <TextView
+                    android:id="@+id/m0502_t012"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/p30"
+                    android:gravity="center"
+                    android:text="@string/m0502_t012"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/fontsize"
+                    android:textStyle="bold" />
+
+            </TableRow>
 
         </LinearLayout>
     </ScrollView>
 
-    <TextView
-        android:id="@+id/m0502_t011"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/p10"
-        android:background="@drawable/green"
-        android:gravity="center"
-        android:text="@string/m0502_t011"
-        android:textSize="@dimen/fontsize"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/m0502_t012"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/p10"
-        android:text="@string/m0502_t012"
-        android:textSize="@dimen/fontsize" />
-
-    <TextView
-        android:id="@+id/m0502_t013"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/p20"
-        android:text="@string/m0502_t013"
-        android:textSize="@dimen/fontsize" />
-
-    <TextView
-        android:id="@+id/m0502_t014"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/p20"
-        android:text="@string/m0502_t014"
-        android:textSize="@dimen/fontsize" />
-
-    <TextView
-        android:id="@+id/m0502_t015"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="@dimen/p20"
-        android:text="@string/m0502_t015"
-        android:textSize="@dimen/fontsize" />
 
 </LinearLayout>
